@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Hanga(c)k</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hanga(c)k"><meta name="msapplication-TileImage" content="/img/favicon.png?"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hanga(c)k"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Hanga(c)k"><meta property="og:url" content="https://hangack.github.io/"><meta property="og:site_name" content="Hanga(c)k"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://hangack.github.io/img/og_image.png"><meta property="article:author" content="Hangack"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://hangack.github.io"},"headline":"Hanga(c)k","image":["https://hangack.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Hangack"},"publisher":{"@type":"Organization","name":"Hanga(c)k","logo":{"@type":"ImageObject","url":"https://hangack.github.io/img/logo.png"}},"description":""}</script><link rel="icon" href="/img/favicon.png?"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/rss2.xml" title="Hanga(c)k" type="application/rss+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Hanga(c)k" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-18T03:17:46.000Z" title="2021. 11. 18. 오후 12:17:46">2021-11-18</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-12-06T05:20:31.303Z" title="2021. 12. 6. 오후 2:20:31">2021-12-06</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/">연습</a><span> / </span><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</a><span> / </span><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/">Kaggle_Survey 2021</a></span><span class="level-item">3분안에 읽기 (약 401 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/18/Codding/Python/kaggle_survey/kaggle-survey00/">Kaggle_Survey00: dtype Warning 해결하기 [pandas]</a></h1><div class="content"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#df = pd.read_csv(&quot;D:/_Bdata/Codding-base-Python/Python/Python-jupyter/Kaggle Survey - 2021 Analysis - Plotly/kaggle_survey_2021_responses.csv&quot;)</span></span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;E:/Fear/Univ/Big_data/Training/Github/Codding-base-Python/Python/Python-jupyter/Kaggle Survey - 2021 Analysis - Plotly/kaggle_survey_2021_responses.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#df = pd.read_csv(&quot;../input/kaggle-survey-2021/kaggle_survey_2021_responses.csv&quot;)</span></span><br></pre></td></tr></table></figure>
+<pre><code>E:\Sadness\anaconda3\lib\site-packages\IPython\core\interactiveshell.py:3165: DtypeWarning: Columns (0,195,201,285,286,287,288,289,290,291,292) have mixed types.Specify dtype option on import or set low_memory=False.
+has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
+</code></pre><p>cvs datasat을 불러오는데 위와 같이 <code>DtypeWarning</code> 이라는 경고가 출력되었다.</p>
+<h2 id="DtypeWarning-해결하기"><a href="#DtypeWarning-해결하기" class="headerlink" title="DtypeWarning 해결하기"></a>DtypeWarning 해결하기</h2><h3 id="filterwarnings"><a href="#filterwarnings" class="headerlink" title="filterwarnings"></a>filterwarnings</h3><p>경고 그 자체가 원하는 작업은 아니지만 문제가 발생하지 않는 이상 user는 경고를 무시해도 상관없다.</p>
+<p>권장하지 않지만 거슬린다면 <code>warnings</code> 모듈의 경고 필터 <code>ignore</code>를 사용해 경고 출력을 무시할 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> warnings <span class="keyword">import</span> filterwarnings</span><br><span class="line">filterwarnings(<span class="string">&#x27;ignore&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="low-memory"><a href="#low-memory" class="headerlink" title="low_memory"></a>low_memory</h3><p>하지만 근본적인 해결은 아니므로 terminal이 제안한 방식인 <code>low_memory=False</code> 를 넣어 해결할 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">&quot;csv url&quot;</span>, low_memory=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+<p>위 방식은 각 column마다 data type을 추측하는 방식으로 옵션명(낮은 메모리)처럼 작업량이 data 크기에 비례해 증가한다.</p>
+<p>방대한 데이터를 처리해야되서 Dtype 추측 방식이 부담된다면?</p>
+<h3 id="dtype-형식-지정"><a href="#dtype-형식-지정" class="headerlink" title="dtype 형식 지정"></a>dtype 형식 지정</h3><p>불러올 file의 문자 형식을 알고 있다면 <code>dtype</code>을 지정해 warning을 해결하고 memory 가용량도 줄일 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">&quot;csv url&quot;</span>, dtype=<span class="string">&#x27;unicode&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://docs.python.org/ko/3/library/warnings.html">warnings — 경고 제어</a></li>
+<li><a target="_blank" rel="noopener" href="https://wikidocs.net/46751">DataFrame의 칼럼</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-17T01:01:26.000Z" title="2021. 11. 17. 오전 10:01:26">2021-11-17</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-28T07:05:43.141Z" title="2021. 11. 28. 오후 4:05:43">2021-11-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</a></span><span class="level-item">2분안에 읽기 (약 287 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/17/Blog/Hexo-blog-page-about/">Hexo 블로그 about 페이지 생성하기</a></h1><div class="content"><p>icarus 테마를 사용하다가 상단의 About이 있지만 경로를 찾지 못해 about 페이지를 만들어봤다.</p>
+<p>hexo에서는 특정 경로를 어느 페이지에서든 진입할 수 있게 테마 옵션에서 navbar를 지원한다.</p>
+<p>icarus 테마는 기본적으로 about 페이지 경로가 설정되어있지만 <code>_config.theme.yml</code>에서 표시할 장소에 <code>About(text): /about(경로)</code>을 추가한다.<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Page top navigation bar configurations</span></span><br><span class="line"><span class="attr">navbar:</span></span><br><span class="line">    <span class="comment"># Navigation menu items</span></span><br><span class="line">    <span class="attr">menu:</span></span><br><span class="line">        <span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line">        <span class="attr">Archives:</span> <span class="string">/archives</span></span><br><span class="line">        <span class="attr">Categories:</span> <span class="string">/categories</span></span><br><span class="line">        <span class="attr">Tags:</span> <span class="string">/tags</span></span><br><span class="line">        <span class="attr">About:</span> <span class="string">/about</span></span><br></pre></td></tr></table></figure></p>
+<p>이런식으로 menu바 설정을 했으면 해당 URI에 대응할 수 있는 경로를 만들어줘야한다.</p>
+<p><code>source</code>경로 아래에 원하는 경로를 만들어주는 <code>page</code> layout을 이용해서 about 경로를 생성하자.<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new page about</span></span><br></pre></td></tr></table></figure></p>
+<p>위 명령어가 정상 작동되었으면 <code>/about</code> 경로가 생성되고 그 아래 <code>index.md</code> 파일도 따라 왔을것이다.<br>index.md가 about에 대한 page로 포스트 작성하듯 원하는 내용을 작성하면된다.</p>
+<h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/29167023/how-to-add-route-for-hexo">How to add route for Hexo?</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-16T01:27:25.000Z" title="2021. 11. 16. 오전 10:27:25">2021-11-16</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-28T07:07:39.431Z" title="2021. 11. 28. 오후 4:07:39">2021-11-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/">연습</a><span> / </span><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/">마크다운</a></span><span class="level-item">2분안에 읽기 (약 292 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/16/Codding/MarkDown/Markdown-url-blank/">Markdown 이미지파일 URL 경로에 띄어쓰기가 있는 경우</a></h1><div class="content"><p><a href="https://hangack.github.io/2021/11/09/Codding/MarkDown/Markdown-href-img/">Markdown 이미지 삽입</a> 포스팅처럼 md 어법으로 이미지를 삽입하다가 한가지 난관에 부딛혔다.</p>
+<center><img src="\images\2111\md url blank\url.png" alt="공백"></center>
+
+<p>image url에 공백이 들어간 것.</p>
+<p>※ 현재 hexo 랜더러를 kramed로 변경한 상태라 아래처럼 공백도 인식한다.</p>
+<ul>
+<li>마찬가지로 hexo 기본 내장 tag 플러그인 어법으로 블로그 포스트는 해결 가능</li>
+</ul>
+<p><img src="\images\2111\md url blank\interstellar poster.png" alt="우린 답을"><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">우린 답을</span>](<span class="link">\images\2111\md url blank\interstellar poster.png</span>)</span><br></pre></td></tr></table></figure></p>
+<p>하지만 ipynb 형식 등 개발환경에서 md 셀을 사용할 때는</p>
+<center><img src="\images\2111\md url blank\ipy.png" alt="jupyter"></center>
+
+<p>여전히 발생하는 문제다.</p>
+<p>html처럼 <code>&amp;nbsp;</code>를 공백 대신 넣어보기도 하고 cmd 마냥 <code>&quot;&quot;</code>로 묶는 등 코랄을 했지만 markdown 어법으로는 해결하지 못했다.</p>
+<p>markdown이 html 어법도 지원하는걸 기억하고 html img 태그로 해결했다.</p>
+<p><img src="\images\2111\md url blank\interstellar poster.png" alt="찾을 것"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;\images\2111\md url blank\interstellar poster.png&quot; alt=&quot;찾을 것&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>html 어법을 사용하면 md로 구현 가능한 하이퍼링크 <code>&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</code> tag는 당연하고<br>가운데 정렬(<code>&lt;center&gt;&lt;/center&gt;</code>)부터 이미지 크기 변경이 가능한 img 태그 <code>size</code> 요소 등 풍부한 표현이 가능하다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-15T17:37:18.000Z" title="2021. 11. 16. 오전 2:37:18">2021-11-16</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-28T07:05:43.131Z" title="2021. 11. 28. 오후 4:05:43">2021-11-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</a></span><span class="level-item">1분안에 읽기 (약 191 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/16/Blog/hexo-post-private/">Hexo 포스트 비공개로 설정하기</a></h1><div class="content"><h2 id="UnderBar-사용하기"><a href="#UnderBar-사용하기" class="headerlink" title="UnderBar( _ ) 사용하기"></a>UnderBar( _ ) 사용하기</h2><p>UnderBar( <code>_</code> )를 title 앞에 붙여주면 hexo에서 private post로 인식하고 배포하지 않는다.<br><img src="/images/2111/private_post/dash.png" alt="MAE-MSE-RMSE.md: 비공개"></p>
+<h2 id="drafts-폴더로-관리"><a href="#drafts-폴더로-관리" class="headerlink" title="_drafts 폴더로 관리"></a>_drafts 폴더로 관리</h2><p><code>scaffolds</code> 폴더에 new post로 생성되는 포스트의 기본 [layout]을 저장할 수 있다.<br><code>_config</code>의 default값은 <code>post</code>로 아래 명령어에 [layout]을 지정하지 않는다면 new post는 <code>post</code> layout으로 생성된다<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new [layout] &lt;title&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><code>draft</code> layout으로 new post를 생성하면 <code>_drafts</code> 폴더에 post가 생성되는데, post title 앞에 UnderBar가 없더라도 private post로 인식된다.<br>layout을 <code>draft</code>로 지정하면 <code>_drafts</code> 폴더 하위에 new post가 생성된다.<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo new draft &lt;title&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/commands.html">Hexo 명령어</a> </li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-14T21:23:55.000Z" title="2021. 11. 15. 오전 6:23:55">2021-11-15</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-29T13:11:14.739Z" title="2021. 11. 29. 오후 10:11:14">2021-11-29</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/">연습</a><span> / </span><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/">마크다운</a></span><span class="level-item">5분안에 읽기 (약 685 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/15/Codding/MarkDown/markdown-mathjax/">markdown 수식 넣기</a></h1><div class="content"><h2 id="mathjax"><a href="#mathjax" class="headerlink" title="mathjax"></a>mathjax</h2><p>Markdown에서는 $x^2$처럼 수식을 사용할 수 있는 mathjax 플러그인이 내장되어있다.</p>
+<h3 id="블럭-지정"><a href="#블럭-지정" class="headerlink" title="블럭 지정"></a>블럭 지정</h3><p>수식을 사용하기 위해 아래와 같이 식 앞 뒤로 $문자를 넣어줘야한다.<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$math$</span><br></pre></td></tr></table></figure><br>$math$</p>
+<p>아래 처럼 $ 문자를 2개 넣는 경우도 있는데,<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$math$$</span><br></pre></td></tr></table></figure></p>
+<script type="math/tex; mode=display">math</script><p>이 경우엔 text 사이에 수식을 삽입하는게 아닌 따로 표현하는 경우에 주로 사용된다.</p>
+<h3 id="첨자"><a href="#첨자" class="headerlink" title="첨자"></a>첨자</h3><p>수학에서 행의 i번째 속성을 가리키거나 x의 n 제곱을 표현할 때 첨자를 주로 사용한다.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$x<span class="emphasis">_i^n$</span></span><br></pre></td></tr></table></figure>
+<p>$x_i^n$</p>
+<ul>
+<li>아래첨자: <code>_</code></li>
+<li>위첨자: <code>^</code></li>
+</ul>
+<h3 id="중괄호"><a href="#중괄호" class="headerlink" title="중괄호"></a>중괄호</h3><p>x의 12제곱을 표현하기 위해 단순히 <code>$x^12$</code>만 입력하게 된다면</p>
+<p>$x^12$처럼 문자 1개만 위첨자로 처리된다.<br>이를 해결해주는 문법이 중괄호( <code>&#123; &#125;</code> )다.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$x^&#123;12&#125;$</span><br></pre></td></tr></table></figure>
+<p>$x^{12}$</p>
+<p>단, 중괄호를 mathjax에서 하나의 문자열로 처리하기 위해 사용되므로 중괄호를 사용하는 식에서는 escape(\)로 문법 인식이 아닌 문자 인식으로 바꿔줘야한다.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$x<span class="emphasis">_5 = [[\&#123;(x_</span>1)+x<span class="emphasis">_2\&#125;+x_</span>3]+x<span class="emphasis">_4]$</span></span><br></pre></td></tr></table></figure>
+<p>※ <code>Hexo</code>: 중괄호를 표현하기 위해선 <code>\</code>를 중첩 사용한다.<br><a href="https://hangack.github.io/2021/11/13/Blog/Setting/Hexo-blog-mathjax/">hexo 수식 사용하기</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$x<span class="emphasis">_5 = [[\\&#123;(x_</span>1)+x<span class="emphasis">_2\\&#125;+x_</span>3]+x<span class="emphasis">_4]$</span></span><br></pre></td></tr></table></figure><br>$x_5 = [[\{(x_1)+x_2\}+x_3]+x_4]$</p>
+<h3 id="행렬-형식"><a href="#행렬-형식" class="headerlink" title="행렬 형식"></a>행렬 형식</h3><h4 id="2속성만-넣을-경우"><a href="#2속성만-넣을-경우" class="headerlink" title="2속성만 넣을 경우"></a>2속성만 넣을 경우</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$v&#123;x \choose 0&#125;$$</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">v{x \choose 0}</script><h4 id="기본-형식-array행렬-amp-괄호-크기-변경"><a href="#기본-형식-array행렬-amp-괄호-크기-변경" class="headerlink" title="기본 형식 array행렬 &amp; 괄호 크기 변경"></a>기본 형식 array행렬 &amp; 괄호 크기 변경</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">X\Bigg\&#123;</span><br><span class="line">\begin&#123;array&#125;&#123;c&#125;</span><br><span class="line"><span class="code">    x_&#123;1&#125;\\</span></span><br><span class="line"><span class="code">    x_&#123;2&#125;</span></span><br><span class="line"><span class="code">\end&#123;array&#125;</span></span><br><span class="line"><span class="code">$$</span></span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+X\Bigg\{
+\begin{array}{c}
+    x_{1}\\
+    x_{2}
+\end{array}</script><h4 id="P-matrix"><a href="#P-matrix" class="headerlink" title="P-matrix"></a>P-matrix</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">L=</span><br><span class="line">\begin&#123;pmatrix&#125;</span><br><span class="line"><span class="code">    b_1   &amp; b_2  &amp; b_3  &amp; \cdots &amp; b_&#123;n-1&#125;&amp; b_n\\</span></span><br><span class="line"><span class="code">    s_1   &amp; 0    &amp; 0    &amp; \cdots &amp; 0      &amp; 0\\</span></span><br><span class="line"><span class="code">    0     &amp; s_2  &amp; 0    &amp; \cdots &amp; 0      &amp; 0\\</span></span><br><span class="line"><span class="code">    0     &amp; 0    &amp; s_3  &amp; \cdots &amp; 0      &amp; 0\\</span></span><br><span class="line"><span class="code">    \vdots&amp;\vdots&amp;\vdots&amp; \ddots &amp; \vdots &amp;\vdots\\</span></span><br><span class="line"><span class="code">    0     &amp; 0    &amp; 0    &amp; \cdots &amp; s_&#123;n-1&#125;&amp; 0\\</span></span><br><span class="line"><span class="code">\end&#123;pmatrix&#125;</span></span><br><span class="line"><span class="code">$$</span></span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+L=
+\begin{pmatrix}
+    b_1   & b_2  & b_3  & \cdots & b_{n-1}& b_n\\
+    s_1   & 0    & 0    & \cdots & 0      & 0\\
+    0     & s_2  & 0    & \cdots & 0      & 0\\
+    0     & 0    & s_3  & \cdots & 0      & 0\\
+    \vdots&\vdots&\vdots& \ddots & \vdots &\vdots\\
+    0     & 0    & 0    & \cdots & s_{n-1}& 0\\
+\end{pmatrix}</script><h4 id="B-matrix"><a href="#B-matrix" class="headerlink" title="B-matrix"></a>B-matrix</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;bmatrix&#125;</span><br><span class="line"><span class="code">    2 &amp; 1 &amp;-1\\</span></span><br><span class="line"><span class="code">    1 &amp; 0 &amp; 5\\</span></span><br><span class="line"><span class="code">   -1 &amp; 3 &amp;-2</span></span><br><span class="line"><span class="code">\end&#123;bmatrix&#125;</span></span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+\begin{bmatrix}
+    2 & 1 &-1\\
+    1 & 0 & 5\\
+   -1 & 3 &-2
+\end{bmatrix}</script><h4 id="행렬에-세로-줄-넣기"><a href="#행렬에-세로-줄-넣기" class="headerlink" title="행렬에 세로 줄 넣기"></a>행렬에 세로 줄 넣기</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\left[</span><br><span class="line">\begin&#123;array&#125;&#123;ccc|c&#125;</span><br><span class="line"><span class="code">    2 &amp; 1 &amp;-1 &amp; 3\\</span></span><br><span class="line"><span class="code">    1 &amp; 0 &amp; 5 &amp; 1\\</span></span><br><span class="line"><span class="code">   -1 &amp; 3 &amp;-2 &amp; 0</span></span><br><span class="line"><span class="code">\end&#123;array&#125;</span></span><br><span class="line"><span class="code">\right]</span></span><br><span class="line"><span class="code">$$</span></span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+\left[ 
+\begin{array}{ccc|c}
+    2 & 1 &-1 & 3\\
+    1 & 0 & 5 & 1\\
+   -1 & 3 &-2 & 0
+\end{array}
+\right]</script><h4 id="V-matrix"><a href="#V-matrix" class="headerlink" title="V-matrix"></a>V-matrix</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;vmatrix&#125;</span><br><span class="line"><span class="code">    a &amp; b\\</span></span><br><span class="line"><span class="code">    c &amp; d</span></span><br><span class="line"><span class="code">\end&#123;vmatrix&#125;</span></span><br><span class="line"><span class="code">=ad-bc</span></span><br><span class="line"><span class="code">$$</span></span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+\begin{vmatrix}
+    a & b\\
+    c & d
+\end{vmatrix}
+=ad-bc</script><h4 id="연립-방정식"><a href="#연립-방정식" class="headerlink" title="연립 방정식"></a>연립 방정식</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;cases&#125;</span><br><span class="line"><span class="code">    v_1 = 3i+2k\\</span></span><br><span class="line"><span class="code">    v_2 = 2j+k\\</span></span><br><span class="line"><span class="code">    v_3 = i+j+k</span></span><br><span class="line"><span class="code">\end&#123;cases&#125;</span></span><br><span class="line"><span class="code">$$</span></span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+\begin{cases}
+    v_1 = 3i+2k\\
+    v_2 = 2j+k\\
+    v_3 = i+j+k
+\end{cases}</script><h3 id="특수문자"><a href="#특수문자" class="headerlink" title="특수문자"></a>특수문자</h3><p>수식에서 사용되는 곱셈 나눗셈부터 pi ohm과 같은 특수문자를 삽입하기 위해선 중괄호 경우처럼 <code>\</code>를 사용해야한다.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">(\hat i\cdot\hat i)\div n \\</span><br><span class="line">= \frac&#123;\vert\hat i\vert\times\vert\hat i\vert cos\theta&#125;&#123;n&#125;\\</span><br><span class="line">= \frac&#123;\vert\hat i\vert^2\times 1&#125;&#123;n&#125; = \frac 1n</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+(\hat i\cdot\hat i)\div n \\
+= \frac{\vert\hat i\vert\times\vert\hat i\vert cos\theta}{n}\\
+= \frac{\vert\hat i\vert^2\times 1}{n} = \frac 1n</script><p>특수문자는 굉장히 다양하므로 삽입하고자 하는 문자를 LaTex(혹은 Mathjax) 검색어에 붙여 검색하자.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-13T06:14:52.000Z" title="2021. 11. 13. 오후 3:14:52">2021-11-13</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-29T13:11:01.643Z" title="2021. 11. 29. 오후 10:11:01">2021-11-29</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</a><span> / </span><a class="link-muted" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/%EC%84%A4%EC%A0%95/">설정</a></span><span class="level-item">3분안에 읽기 (약 399 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/13/Blog/Setting/Hexo-blog-mathjax/">Hexo blog markdown 수식 표현 mathjax</a></h1><div class="content"><p>분명 MarkDown math tutorial대로 수식을 작성하고 Ipython notebook에서도 정상적으로 출력되는걸 확인했지만,<br>Hexo post는 아래처럼 읽어내지를 못한다.<br><img src="/images/2111/Hexo_mathjax/hexoNotMath.png" alt="으아악 아니야!"></p>
+<h2 id="Hexo-plugin-설치"><a href="#Hexo-plugin-설치" class="headerlink" title="Hexo plugin 설치"></a>Hexo plugin 설치</h2><p>다른 블로그 모듈을 사용하는 방법도 있지만, Hexo를 설치했으니 그대로 사용하기 위해 우선 구글링으로 해결해본다.<br>검색 결과 hexo에서 사용하는 랜더링 모듈에 수식표현 문법이 포함되어 있지 않아서 발생하는 문제였다.</p>
+<h3 id="기본-renderer-교체"><a href="#기본-renderer-교체" class="headerlink" title="기본 renderer 교체"></a>기본 renderer 교체</h3><p>Hexo의 기본 renderer인 marked를 제거하고 mathjax를 지원하는 kramed로 교체한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm uninstall hexo-renderer-marked --save</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-renderer-kramed --save</span></span><br></pre></td></tr></table></figure>
+<p>설치가 완료되면 <code>..\node_modules\hexo-renderer-kramed\lib\renderer.js</code>에서 <code>formatText</code> 함수의 반환값을 변경해준다.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Change inline math rule</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">formatText</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// Fit kramed&#x27;s rule: $$ + \1 + $$</span></span><br><span class="line">    <span class="keyword">return</span> text;</span><br><span class="line"><span class="comment">//    return text.replace(/`\$(.*?)\$`/g, &#x27;$$$$$1$$$$&#x27;);  // (: default)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="mathjax-설치"><a href="#mathjax-설치" class="headerlink" title="mathjax 설치"></a>mathjax 설치</h3><p>kramed 랜더러에 설정값을 넣어줄 mathjax 랜더러를 설치한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-renderer-mathjax --save</span></span><br></pre></td></tr></table></figure>
+<p>마찬가지로 <code>..\node_modules\hexo-renderer-mathjax\mathjax.html</code>에서 스크립트 source url을 교체한다.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt; --&gt;</span> <span class="comment">&lt;!--: default --&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h2 id="Mathjax-활성"><a href="#Mathjax-활성" class="headerlink" title="Mathjax 활성"></a>Mathjax 활성</h2><p>이제 사용하고 있는 <code>_config.theme.yml</code>에서 <code>mathjax</code>를 활성화 시켜주면된다.</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># mathjax: false    # : default</span></span><br></pre></td></tr></table></figure>
+<p>markdown 문법을 사용할 예정이라 문법 추가 설정은 하지 않는다.</p>
+<h2 id="예제"><a href="#예제" class="headerlink" title="예제"></a>예제</h2><p><a href="https://hangack.github.io/2021/11/15/Codding/MarkDown/markdown-%EC%88%98%EC%8B%9D-%EB%84%A3%EA%B8%B0/">오…</a></p>
+<h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-math">hexo-math</a></li>
+<li><a target="_blank" rel="noopener" href="https://hyeshinoh.github.io/2018/10/24/hexo_mathjax_00/">Hexo 블로그-mathjax</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-12T05:52:57.000Z" title="2021. 11. 12. 오후 2:52:57">2021-11-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-28T07:21:38.725Z" title="2021. 11. 28. 오후 4:21:38">2021-11-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0/">빅데이터</a></span><span class="level-item">5분안에 읽기 (약 804 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/12/Big_data/MAE-MSE-RMSE/">평가지표 RMSE와 MAE, MSE</a></h1><div class="content"><h2 id="DATA"><a href="#DATA" class="headerlink" title="DATA"></a>DATA</h2><p>Row(행)가 $n$개 있는 dataframe에서;<br>실측 값에 대한 dataframe의 column(열)을 $Y$로 봤을 때,</p>
+<p>$Y$는 다음과 같은 원소의 집합이 된다.</p>
+<script type="math/tex; mode=display">
+Y=
+\begin{pmatrix}
+    y_1 \\
+    y_2\\
+    \vdots\\
+    y_n
+\end{pmatrix}</script><p>모델링 결과 등 $Y$에 대한 추정값의 집합이 $\hat{Y}$다.</p>
+<script type="math/tex; mode=display">
+\hat Y=
+\begin{pmatrix}
+    \hat y_1 \\
+    \hat y_2\\
+    \vdots\\
+    \hat y_n
+\end{pmatrix}</script><h2 id="평가-지표"><a href="#평가-지표" class="headerlink" title="평가 지표"></a>평가 지표</h2><p>실측값$Y$와 추정값$\hat Y$가 있으니 두 값의 차이인 오차(error: $\Delta y_i = y_i-\hat{y_i}$)가 발생한다.<br>$\Delta y_i$를 여러 방식으로 가공해서 측정값의 신뢰도를 보여주는게 평가 지표다.</p>
+<p>다양한 평가지표 중 RMSE에 관해 공부할 것이며, MSE, MAE는 RMSE와 매우 유사한 형태를 가진다.</p>
+<h3 id="MAE-Mean-Absolute-Error-평균-절대-오차"><a href="#MAE-Mean-Absolute-Error-평균-절대-오차" class="headerlink" title="MAE(Mean Absolute Error): 평균 절대 오차"></a>MAE(Mean Absolute Error): 평균 절대 오차</h3><script type="math/tex; mode=display">MAE=\sum_{i=1}^n\frac{\vert y_i-\hat{y_i}\vert}{n}</script><p>$\Delta y_i$의 절대값을 모두 더한 값의 평균이다.</p>
+<h3 id="MSE-Mean-Squared-Error-평균-제곱-오차"><a href="#MSE-Mean-Squared-Error-평균-제곱-오차" class="headerlink" title="MSE(Mean Squared Error): 평균 제곱 오차"></a>MSE(Mean Squared Error): 평균 제곱 오차</h3><script type="math/tex; mode=display">MSE=\sum_{i=1}^n\frac{(y_i-\hat{y_i})^2}{n}</script><p>$\Delta y_i$의 제곱을 모두 더한 값의 평균이다.</p>
+<h3 id="RMSE-Root-Mean-Square-Error-평균-제곱근-오차"><a href="#RMSE-Root-Mean-Square-Error-평균-제곱근-오차" class="headerlink" title="RMSE(Root Mean Square Error): 평균 제곱근 오차"></a>RMSE(Root Mean Square Error): 평균 제곱근 오차</h3><script type="math/tex; mode=display">RMSE=\sqrt{\sum_{i=1}^n\frac{(y_i-\hat{y_i})^2}{n}}</script><p>$\Delta y_i$의 제곱을 모두 더한 값의 평균에 Root를 씌운 형태로 $\sqrt{MSE}=RMSE$다.</p>
+<h4 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h4><p>위 세 지표는 모두 오차 그 자체인 $y_i-\hat{y_i}$를 포함해 값이 낮을수록 좋은 추정모델임을 의미한다.<br>단, 실측값과 추정값의 차에 지나치게 의존하는 경향을 보여 $3-1=2$와 $100-102=2$ 모두 동일한 평가로 보여진다.</p>
+<p>위 세 지표는 오차 자체에 의존하는 만큼 직관적인 지표가 나와 대중에게 설명하기 좋다.<br>MAE로 예를 들자면, 600과 620의 차는 20이므로 20의 예측 오류가 발생했다고 설명할 수 있다.</p>
+<p>MSE의 경우 오차 제곱하기 때문에 $\vert error\vert&lt;1$일 경우 error값은 작아지고 반대의 경우 커지는 왜곡이 발생한다.<br>RMSE에서는 MSE에 Root를 씌웠기 때문에 MSE만큼의 왜곡은 발생하지 않는다.</p>
+<h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><p>간단한 예시로 아래의 $Y_1$과 $Y_2$ python 예제가 있다.</p>
+<h3 id="MAE"><a href="#MAE" class="headerlink" title="MAE"></a>MAE</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mean_absolute_error</span>(<span class="params">y_true, y_pred</span>):</span></span><br><span class="line"></span><br><span class="line">    error = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> yt, yp <span class="keyword">in</span> <span class="built_in">zip</span>(y_true, y_pred):</span><br><span class="line">        error = error + np.<span class="built_in">abs</span>(yt-yp)</span><br><span class="line">  </span><br><span class="line">    mae = error / <span class="built_in">len</span>(y_true)</span><br><span class="line">    <span class="keyword">return</span> mae</span><br></pre></td></tr></table></figure>
+<h3 id="MSE"><a href="#MSE" class="headerlink" title="MSE"></a>MSE</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mean_squared_error</span>(<span class="params">y_true, y_pred</span>):</span></span><br><span class="line"></span><br><span class="line">    error = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> yt, yp <span class="keyword">in</span> <span class="built_in">zip</span>(y_true, y_pred):</span><br><span class="line">        error = error + (yt - yp) ** <span class="number">2</span></span><br><span class="line">  </span><br><span class="line">    mse = error / <span class="built_in">len</span>(y_true)</span><br><span class="line">    <span class="keyword">return</span> mse</span><br></pre></td></tr></table></figure>
+<h3 id="RMSE"><a href="#RMSE" class="headerlink" title="RMSE"></a>RMSE</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">root_rmse_squared_error</span>(<span class="params">y_true, y_pred</span>):</span></span><br><span class="line">    error = <span class="number">0</span></span><br><span class="line">  </span><br><span class="line">    <span class="keyword">for</span> yt, yp <span class="keyword">in</span> <span class="built_in">zip</span>(y_true, y_pred):</span><br><span class="line">        error = error + (yt - yp) ** <span class="number">2</span></span><br><span class="line">  </span><br><span class="line">    mse = error / <span class="built_in">len</span>(y_true)</span><br><span class="line">    rmse = np.<span class="built_in">round</span>(np.sqrt(mse), <span class="number">3</span>)</span><br><span class="line">    <span class="keyword">return</span> rmse</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">y1_true = [<span class="number">400</span>, <span class="number">300</span>, <span class="number">800</span>]</span><br><span class="line">y1_pred = [<span class="number">380</span>, <span class="number">320</span>, <span class="number">777</span>]</span><br><span class="line"></span><br><span class="line">y2_true = [<span class="number">400</span>, <span class="number">300</span>, <span class="number">800</span>, <span class="number">900</span>]</span><br><span class="line">y2_pred = [<span class="number">380</span>, <span class="number">320</span>, <span class="number">777</span>, <span class="number">600</span>]</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;MAE:&quot;</span>, mean_absolute_error(y1_true, y1_pred))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;MSE:&quot;</span>, mean_squared_error(y1_true, y1_pred))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;RMSE:&quot;</span>, root_rmse_squared_error(y1_true, y1_pred))</span><br></pre></td></tr></table></figure>
+<pre><code>MAE: 21.0
+MSE: 443.0
+RMSE: 21.048
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;MAE:&quot;</span>, mean_absolute_error(y2_true, y2_pred))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;MSE:&quot;</span>, mean_squared_error(y2_true, y2_pred))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;RMSE:&quot;</span>, root_rmse_squared_error(y2_true, y2_pred))</span><br></pre></td></tr></table></figure>
+<pre><code>MAE: 90.75
+MSE: 22832.25
+RMSE: 151.103
+</code></pre><p>오차값이 20~30 사이에서 놀다가 $\Delta y=300$인 이상값이 하나 들어가면서 지표가 지나치게 커짐을 확인할 수 있다.<br>마찬가지로 MSE와 RMSE의 왜곡 차이도 확연히 드러난다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-11T21:48:34.000Z" title="2021. 11. 12. 오전 6:48:34">2021-11-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-28T07:04:22.336Z" title="2021. 11. 28. 오후 4:04:22">2021-11-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</a><span> / </span><a class="link-muted" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/%EC%84%A4%EC%A0%95/">설정</a></span><span class="level-item">3분안에 읽기 (약 450 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/12/Blog/Setting/git-bash-%EC%97%B0%EB%8F%99/">git bash 연동 및 연동해제</a></h1><div class="content"><h2 id="Git-Bash-GitHub-연동"><a href="#Git-Bash-GitHub-연동" class="headerlink" title="Git Bash: GitHub 연동"></a>Git Bash: GitHub 연동</h2><p>github와 컴퓨터를 연동해주는 터미널인 git bash를 이용하기 위해 우선 git bash에 연동시킬 user명과 계정을 확인시켜줄 필요가 있다.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;user name&quot;</span><br><span class="line">$ git config --global user.email email@mail.com</span><br></pre></td></tr></table></figure></p>
+<p>위 명령어를 입력하고서 계정 연동이 필요한 작업을 하게되면 웹 브라우저 혹은 code를 통한 인증을 요구한다.<br><img src="/images/2111/GitBash_connect/연동.png" alt="GitHub 연동"></p>
+<h2 id="Git-Bash-연동해제"><a href="#Git-Bash-연동해제" class="headerlink" title="Git Bash: 연동해제"></a>Git Bash: 연동해제</h2><p>일반적으로 GitHub 관리는 개인 컴퓨터에서 진행하겠지만, 예외적으로 외부 컴퓨터에서 작업하게될 경우가 있을 수 있다.<br>이런 경우 로그아웃을 해야하지만, 웹 페이지도 아닌 로컬에 입력된 정보에 연동을 끊는 방법이 필요하다.</p>
+<h3 id="자격증명제거"><a href="#자격증명제거" class="headerlink" title="자격증명제거"></a>자격증명제거</h3><p>[제어판] - [사용자 계정] - [자격 증명 관리] - [Windows 자격 증명] 순으로 진입하면 Git~ 으로 연동된 자격 증명을 확인 할 수 있다.<br><img src="/images/2111/GitBash_connect/연동해제.png" alt="window 자격증명"></p>
+<p>자격 증명 [제거]를 클릭하면 Git Bash에서 연동은 우선 해제된다.</p>
+<p>하지만 문제가 하나 남게되는데, 첫 연동 이후엔 연동 정보가 캐쉬되어 이메일 추가 인증을 요구하지 않는다.</p>
+<h3 id="cookie-제거"><a href="#cookie-제거" class="headerlink" title="cookie 제거"></a>cookie 제거</h3><p>자격 증명을 제거한 다음 hithub 엑세스에 사용한 웹 브라우저의 캐쉬를 삭제하면 다음 연동 때 cookie로 남긴 데이터가 없기 때문에 추가 인증을 요구한다.<br><img src="/images/2111/GitBash_connect/del_cookie.png" alt="쿠키 제거"></p>
+<p>외부에서 로그인 했을 경우엔 시크릿 모드를 쓰거나 발자취를 지우는게 보안상 중요.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-10T22:27:24.000Z" title="2021. 11. 11. 오전 7:27:24">2021-11-11</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-12-02T02:45:38.750Z" title="2021. 12. 2. 오전 11:45:38">2021-12-02</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/">연습</a><span> / </span><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</a><span> / </span><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/">Kaggle_Survey 2021</a></span><span class="level-item">9분안에 읽기 (약 1288 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/11/Codding/Python/kaggle_survey/Data-Transformation-input-num/">문자열에서 특정 값을 뽑아내고 input을 받는 함수</a></h1><div class="content"><h2 id="Kaggle-Survey-Data-Transformation"><a href="#Kaggle-Survey-Data-Transformation" class="headerlink" title="Kaggle Survey Data Transformation"></a>Kaggle Survey Data Transformation</h2><p><a target="_blank" rel="noopener" href="https://www.kaggle.com/c/kaggle-survey-2021">2021 Kaggle Machine Learning &amp; Data Science Survey</a> 에서 질문지를 나누는 작업 중 여러 part로 다수의 칼럼명을 가진 question number 부분의 <a target="_blank" rel="noopener" href="https://www.kaggle.com/j2hoon85/for-newbie-let-s-do-data-transformation">칼럼명을 뽑아내는 함수</a>를 찾았고, 이 함수에 대응할 수 있으며 질문의 A,B type을 특정해낼 수 있는 input 함수를 짜봤다.</p>
+<h3 id="데이터-칼럼명-나누기"><a href="#데이터-칼럼명-나누기" class="headerlink" title="데이터 칼럼명 나누기"></a>데이터 칼럼명 나누기</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> warnings <span class="keyword">import</span> filterwarnings</span><br><span class="line">filterwarnings(<span class="string">&#x27;ignore&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>우선 모든 Question 칼럼명을 추출해낸다.<br>물론 데이터를 나누는 작업 전에 나눌 데이터와 데이터 명을 학습해야한다.<br><code>kaggle_survey_2021_responses.csv</code>의 칼럼명 형식은 다음과 같다.</p>
+<ul>
+<li><code>&#39;Q&#39;(num1)</code></li>
+<li><code>&#39;Q&#39;(num1)&#39;_Part_&#39;(num2)</code></li>
+<li><code>&#39;Q&#39;(num1)&#39;_&#39;(type)&#39;_Part_&#39;(num2)</code></li>
+</ul>
+<p>각각을 Question, sub_Qustion, type_Qustion(sub 포함)으로 볼 수 있다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#df = pd.read_csv(&quot;D:/_Bdata/Codding-base-Python/Python/Python-jupyter/Kaggle Survey - 2021 Analysis - Plotly/kaggle_survey_2021_responses.csv&quot;)</span></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;E:/Fear/Univ/Big_data/Training/Github/Codding-base-Python/Python/Python-jupyter/Kaggle Survey - 2021 Analysis - Plotly/kaggle_survey_2021_responses.csv&quot;</span>)</span><br><span class="line">df_col_name = df.columns[<span class="number">1</span>:]</span><br><span class="line">df_col_name</span><br></pre></td></tr></table></figure>
+<pre><code>Index([&#39;Q1&#39;, &#39;Q2&#39;, &#39;Q3&#39;, &#39;Q4&#39;, &#39;Q5&#39;, &#39;Q6&#39;, &#39;Q7_Part_1&#39;, &#39;Q7_Part_2&#39;,
+       &#39;Q7_Part_3&#39;, &#39;Q7_Part_4&#39;,
+       ...
+       &#39;Q38_B_Part_3&#39;, &#39;Q38_B_Part_4&#39;, &#39;Q38_B_Part_5&#39;, &#39;Q38_B_Part_6&#39;,
+       &#39;Q38_B_Part_7&#39;, &#39;Q38_B_Part_8&#39;, &#39;Q38_B_Part_9&#39;, &#39;Q38_B_Part_10&#39;,
+       &#39;Q38_B_Part_11&#39;, &#39;Q38_B_OTHER&#39;],
+      dtype=&#39;object&#39;, length=368)
+</code></pre><h3 id="문자열을-인식해서-input-값을-특정해주는-함수-만들기"><a href="#문자열을-인식해서-input-값을-특정해주는-함수-만들기" class="headerlink" title="문자열을 인식해서 input 값을 특정해주는 함수 만들기"></a>문자열을 인식해서 input 값을 특정해주는 함수 만들기</h3><p>questions_count에 대응할 수 있는 input 함수를 짜낸다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">input_num</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;input Question no.: &quot;</span>)</span><br><span class="line">    Qnum = <span class="built_in">input</span>()</span><br><span class="line">    Qnum_subQ = [s <span class="keyword">for</span> s <span class="keyword">in</span> df_col_name <span class="keyword">if</span> <span class="string">&quot;Q&quot;</span>+Qnum+<span class="string">&quot;_&quot;</span> <span class="keyword">in</span> s]</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> Qnum_subQ == []:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Q&quot;</span>+Qnum+<span class="string">&quot; has not part_Q&quot;</span></span><br><span class="line">    </span><br><span class="line">    Question_type = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">if</span> [s <span class="keyword">for</span> s <span class="keyword">in</span> Qnum_subQ <span class="keyword">if</span> (<span class="string">&quot;A&quot;</span>o<span class="string">r&quot;B&quot;</span>) <span class="keyword">in</span> s]:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;input Q&quot;</span>+Qnum+<span class="string">&quot;&#x27;s type&quot;</span>)</span><br><span class="line">        Question_type = <span class="built_in">input</span>().upper()</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">if</span> Qnum_subQ:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;input Q&quot;</span>+Qnum+<span class="string">&quot;&#x27;s last part no.: &quot;</span>)</span><br><span class="line">        part_num = <span class="built_in">input</span>()</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> questions_count(Qnum,part_num,Question_type)</span><br></pre></td></tr></table></figure>
+<p>위 함수는<br>Question number(<code>Qnum</code>)을 입력받은 뒤 이전에 정의한 칼럼명을 추출해 낸 <code>df_col_name</code> 객체내에서 <code>&quot;Q&quot;+Qnum+&quot;_&quot;</code> 문자열이 있는 sub_Question 형식을 찾아낸다.</p>
+<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/j2hoon85/for-newbie-let-s-do-data-transformation">Data Transformation</a>에서 얻어낸 코드는 <code>Qnum</code> 만 있는 경우에 대한 작업이 없으므로 이 경우는 line6 조건문에서 함수를 종료한다.</p>
+<p>line 9의 if문에선 <code>&#39;A&#39; or &#39;B&#39;</code> 문자가 들어있는 문자열을 list에서 식별해 해당하는 경우엔 Question_type 객체에 type을 입력 받게 되는 조건문을 작성했다.<br>이 때, <code>upper()</code> 함수를 이용해 소문자로 입력받아도 대문자로 자동변환되게 설정했다.</p>
+<p>line 14의 조건문은 sub Question의 마지막 열을 입력받는 조건문으로 사용자가 ‘kaggle_survey’에서 직접 확인해서 input 값을 정해야한다.</p>
+<h3 id="칼럼명-리스트로-뽑아내기"><a href="#칼럼명-리스트로-뽑아내기" class="headerlink" title="칼럼명 리스트로 뽑아내기"></a>칼럼명 리스트로 뽑아내기</h3><p><a target="_blank" rel="noopener" href="https://www.kaggle.com/j2hoon85/for-newbie-let-s-do-data-transformation">Data Transformation</a>에서 가져온 코드로, 원하는 sub_Question들을 뽑아낼 수 있는 함수다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">questions_count</span>(<span class="params">question_num, part_num, Question_type = <span class="literal">False</span></span>):</span></span><br><span class="line">    part_questions = []</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> Question_type  <span class="keyword">in</span> [<span class="string">&quot;A&quot;</span>,<span class="string">&quot;B&quot;</span>]:</span><br><span class="line">        part_questions = [<span class="string">&#x27;Q&#x27;</span>+question_num+<span class="string">&quot;_&quot;</span>+Question_type+<span class="string">&quot;_Part_&quot;</span>+<span class="built_in">str</span>(j) <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="built_in">int</span>(part_num))]</span><br><span class="line">        part_questions.append(<span class="string">&quot;Q&quot;</span>+question_num+<span class="string">&quot;_&quot;</span>+Question_type+<span class="string">&quot;_OTHER&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        part_questions = [<span class="string">&#x27;Q&#x27;</span>+question_num+<span class="string">&#x27;_Part_&#x27;</span>+<span class="built_in">str</span>(j) <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="built_in">int</span>(part_num))]</span><br><span class="line">        part_questions.append(<span class="string">&#x27;Q&#x27;</span>+question_num+<span class="string">&#x27;_OTHER&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">    categories = []</span><br><span class="line">    counts = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> part_questions:</span><br><span class="line">        category = df[i].value_counts().index[<span class="number">0</span>]</span><br><span class="line">        val = df[i].value_counts()[<span class="number">0</span>]</span><br><span class="line">        categories.append(category)</span><br><span class="line">        counts.append(val)</span><br><span class="line">        </span><br><span class="line">    combined_df = pd.DataFrame()</span><br><span class="line">    combined_df[<span class="string">&#x27;Category&#x27;</span>] = categories</span><br><span class="line">    combined_df[<span class="string">&#x27;Count&#x27;</span>] = counts</span><br><span class="line">    </span><br><span class="line">    combined_df = combined_df.sort_values([<span class="string">&#x27;Count&#x27;</span>], ascending = <span class="literal">False</span>)</span><br><span class="line">    <span class="keyword">return</span> combined_df</span><br></pre></td></tr></table></figure>
+<p><code>part_question</code> List를 만들어서 칼럼명을 저장하는데, <code>Question_type</code>이 입력되었을 경우와 아닌경우로 조건문이 나뉜다.</p>
+<ul>
+<li>type이 있는 경우: <code>&quot;Q(num)_(type)_Part_(part_num)&quot;</code></li>
+<li>type이 없는 경우: <code>&quot;Q(num)_Part_(part_num)&quot;</code></li>
+</ul>
+<p>csv 파일을 보면 알 수 있지만, sub_qustion의 마지막 칼럼은 <code>Q(num)_OTHER</code>로 구성된다.<br>위 예외에 대응하기 위해 append함수를 이용해서 list에 <code>Q(num)_OTHER</code> 값을 추가한다.</p>
+<p>남은 작업은 기존 df에서 칼럼명과 칼럼에 응답한 합을 구하기 위해<code>value_counts</code>함수의 <code>index</code>와 <code>values</code>를 사용해서 만든 dataframe을 반환하면 Data Transformation 작업이 끝난다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">input_num()</span><br></pre></td></tr></table></figure>
+<pre><code>input Question no.: 
+1
+
+
+
+
+
+&#39;Q1 has not part_Q&#39;
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">input_num()</span><br></pre></td></tr></table></figure>
+<pre><code>input Question no.: 
+7
+input Q7&#39;s last part no.: 
+12
+</code></pre><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Category</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Python</td>
+      <td>21860</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SQL</td>
+      <td>10756</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>C++</td>
+      <td>5535</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>R</td>
+      <td>5334</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Java</td>
+      <td>4769</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>C</td>
+      <td>4709</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Javascript</td>
+      <td>4332</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>MATLAB</td>
+      <td>2935</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Other</td>
+      <td>2575</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Bash</td>
+      <td>2216</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Julia</td>
+      <td>305</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Swift</td>
+      <td>242</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">input_num()</span><br></pre></td></tr></table></figure>
+<pre><code>input Question no.: 
+27
+input Q27&#39;s type
+a
+input Q27&#39;s last part no.: 
+11
+</code></pre><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Category</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Amazon Web Services (AWS)</td>
+      <td>3721</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Google Cloud Platform (GCP)</td>
+      <td>3142</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Microsoft Azure</td>
+      <td>2450</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>IBM Cloud / Red Hat</td>
+      <td>572</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Oracle Cloud</td>
+      <td>454</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>VMware Cloud</td>
+      <td>390</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Other</td>
+      <td>337</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SAP Cloud</td>
+      <td>290</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Salesforce Cloud</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Alibaba Cloud</td>
+      <td>259</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Tencent Cloud</td>
+      <td>172</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<h2 id="외부-링크"><a href="#외부-링크" class="headerlink" title="외부 링크"></a>외부 링크</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.kaggle.com/j2hoon85/for-newbie-let-s-do-data-transformation">Data Transformation</a></li>
+</ul>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://lapina.tistory.com/108">리스트에서 특정 문자열을 포함한 원소 뽑아내기</a></li>
+</ul>
+<h2 id="기억이-안날-때는-응애"><a href="#기억이-안날-때는-응애" class="headerlink" title="기억이 안날 때는 응애.."></a>기억이 안날 때는 응애..</h2><ul>
+<li><a href="https://hangack.github.io/2021/11/02/Codding/Python/basic/python11-define/">python 함수</a></li>
+<li><a href="https://hangack.github.io/2021/11/02/Codding/Python/basic/python12-%EC%9E%85%EC%B6%9C%EB%A0%A5/">python 입출력</a></li>
+<li><a href="https://hangack.github.io/2021/11/01/Codding/Python/basic/python7-%EC%A0%9C%EC%96%B4%EB%AC%B8/">python if문</a></li>
+<li><a href="https://hangack.github.io/2021/11/01/Codding/Python/basic/python8-%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%EC%9E%90/">python 비교연산자</a></li>
+<li><a href="https://hangack.github.io/2021/11/01/Codding/Python/basic/python9-for%EB%AC%B8/">python for문</a></li>
+<li><a href="https://hangack.github.io/2021/11/01/Codding/Python/basic/python2-list/">python list_명령어</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-11-09T07:27:25.000Z" title="2021. 11. 9. 오후 4:27:25">2021-11-09</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2021-11-28T07:07:39.408Z" title="2021. 11. 28. 오후 4:07:39">2021-11-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/">연습</a><span> / </span><a class="link-muted" href="/categories/%EC%97%B0%EC%8A%B5/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/">마크다운</a></span><span class="level-item">4분안에 읽기 (약 534 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/11/09/Codding/MarkDown/Markdown-href-img/">Markdown 하이퍼링크 이미지 넣기</a></h1><div class="content"><h2 id="URL-넣기"><a href="#URL-넣기" class="headerlink" title="URL 넣기"></a>URL 넣기</h2><h3 id="URL-단순-입력"><a href="#URL-단순-입력" class="headerlink" title="URL 단순 입력"></a>URL 단순 입력</h3><p>단순히 표현하고 싶은 url을 붙여넣으면 아래처럼 해당 text가 url로 링크된다.<br>엘든링? <a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">https://en.bandainamcoent.eu/elden-ring/elden-ring</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">엘든링? https://en.bandainamcoent.eu/elden-ring/elden-ring</span><br></pre></td></tr></table></figure></p>
+<h3 id="URL-삽입"><a href="#URL-삽입" class="headerlink" title="URL 삽입"></a>URL 삽입</h3><p>하지만 아래처럼 url 뒤로 띄어쓰기가 없을 경우 <code>&lt;</code> , <code>&gt;</code>로 묶어줘야 정확한 URL 표시가 가능하다.<br>엘든링 <a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">https://en.bandainamcoent.eu/elden-ring/elden-ring</a>엘?든링<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">엘든링 <span class="xml">&lt;https://en.bandainamcoent.eu/elden-ring/elden-ring&gt;</span>엘?든링</span><br></pre></td></tr></table></figure></p>
+<h3 id="텍스트-하이퍼링크"><a href="#텍스트-하이퍼링크" class="headerlink" title="텍스트 하이퍼링크"></a>텍스트 하이퍼링크</h3><p>특정 텍스트에 URL을 링크하는 text href를 사용하고 싶을 경우엔 <code>[text](URL)</code> 형식으로 작성하면 된다.</p>
+<p><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">엘?든?링?</a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">엘?든?링?</span>](<span class="link">https://en.bandainamcoent.eu/elden-ring/elden-ring</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="URL-참조"><a href="#URL-참조" class="headerlink" title="URL 참조"></a>URL 참조</h3><p>하나의 URL을 여러번 사용해야할 때 참조 URL을 익혀두면 편하다.</p>
+<p><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">엘든링</a><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">엘든링?</a><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">엘?든?링</a><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">엘?<br>든?<br>링?</a><br><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">엘든링!</a><br><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring">22년 2월 25일 대발매</a></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">엘든링</span>][<span class="symbol">ER</span>][<span class="string">엘든링?</span>][<span class="symbol">ER</span>][<span class="string">엘?든?링</span>][<span class="symbol">ER</span>][<span class="string">엘?</span></span><br><span class="line"><span class="string">든?</span></span><br><span class="line"><span class="string">링?</span>][<span class="symbol">ER</span>]</span><br><span class="line">[<span class="string">엘든링!</span>][<span class="symbol">ER</span>]</span><br><span class="line">[<span class="string">22년 2월 25일 대발매</span>][<span class="symbol">ER</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">ER</span>]: <span class="link">https://en.bandainamcoent.eu/elden-ring/elden-ring</span></span><br></pre></td></tr></table></figure>
+<h3 id="이미지-삽입"><a href="#이미지-삽입" class="headerlink" title="이미지 삽입"></a>이미지 삽입</h3><p>이미지 삽입은 Href 형식 앞에 <code>!</code>를 붙여 <code>![alt](URL)</code>로 작성한다.</p>
+<p><img src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/00-page-setup/eldenring_new.png?twic=v1/cover=800x267/step=10/quality=80" alt="Elden Ring"><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Elden Ring</span>](<span class="link">https://p325k7wa.twic.pics/high/elden-ring/elden-ring/00-page-setup/eldenring_new.png?twic=v1/cover=800x267/step=10/quality=80</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="이미지-하이퍼링크"><a href="#이미지-하이퍼링크" class="headerlink" title="이미지 하이퍼링크"></a>이미지 하이퍼링크</h3><p>그럼 이미지에 링크를 넣는 방법은 어떻게 해야할까?</p>
+<p>이미지 표현문을 <code>[</code> , <code>]</code>로 묶어 text 처럼 표현하고 그 뒤에 href를 작성하면 된다.<br>ex) <code>[![alt](URL)](Href)</code></p>
+<p><a target="_blank" rel="noopener" href="https://en.bandainamcoent.eu/elden-ring/elden-ring"><img src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/00-page-setup/eldenring_new.png?twic=v1/cover=800x267/step=10/quality=80" alt="엘든링 보러가기"></a><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">![엘든링 보러가기</span>](<span class="link">https://p325k7wa.twic.pics/high/elden-ring/elden-ring/00-page-setup/eldenring_new.png?twic=v1/cover=800x267/step=10/quality=80</span>)](<span class="link">https://en.bandainamcoent.eu/elden-ring/elden-ring</span>)</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://hangack.github.io/2021/11/18/Blog/Hexo-image/">Hexo local image 삽입하기</a></p>
+<h2 id="참조"><a href="#참조" class="headerlink" title="참조"></a>참조</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://lynmp.com/ko/article/title/markdown-link-ua811c9dc59o">[LYNMP 도움말] 마크다운(Markdown) 문법 - 링크 삽입</a></li>
+</ul>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/2/">이전</a></div><div class="pagination-next"><a href="/page/4/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link" href="/page/2/">2</a></li><li><a class="pagination-link is-current" href="/page/3/">3</a></li><li><a class="pagination-link" href="/page/4/">4</a></li><li><a class="pagination-link" href="/page/5/">5</a></li><li><a class="pagination-link" href="/page/6/">6</a></li></ul></nav></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Hangack"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Hangack</p><p class="is-size-6 is-block">Hanga(c)k</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">55</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">26</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/hangack"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Youtube" href="https://www.youtube.com/channel/UCQuHrr7-mBtutw9V94XGH-g"><i class="fab fa-youtube"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitch" href="https://www.twitch.tv/hangack"><i class="fab fa-twitch"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Steam" href="https://steamcommunity.com/id/HanGack/"><i class="fab fa-steam"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/"><span class="level-start"><span class="level-item">블로그</span></span><span class="level-end"><span class="level-item tag">16</span></span></a><ul><li><a class="level is-mobile" href="/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/%EC%84%A4%EC%A0%95/"><span class="level-start"><span class="level-item">설정</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0/"><span class="level-start"><span class="level-item">빅데이터</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/"><span class="level-start"><span class="level-item">연습</span></span><span class="level-end"><span class="level-item tag">32</span></span></a><ul><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/R/"><span class="level-start"><span class="level-item">R</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"><span class="level-start"><span class="level-item">마크다운</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"><span class="level-start"><span class="level-item">파이썬</span></span><span class="level-end"><span class="level-item tag">28</span></span></a><ul><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/"><span class="level-start"><span class="level-item">Kaggle_Survey 2021</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EA%B8%B0%EC%B4%88/"><span class="level-start"><span class="level-item">기초</span></span><span class="level-end"><span class="level-item tag">15</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EB%AA%A8%EB%93%88/"><span class="level-start"><span class="level-item">모듈</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EC%84%A4%EC%A0%95/"><span class="level-start"><span class="level-item">설정</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/"><span class="level-start"><span class="level-item">취미(뻘짓중)</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/%EA%B2%8C%EC%9E%84/"><span class="level-start"><span class="level-item">게임</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><figure class="media-left"><a class="image" href="/2021/12/07/Codding/Python/kaggle_survey/kaggle-survey-graphs/"><img src="/thumbnails/CS/plotly.svg" alt="Kaggle_Survey Graphs"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-12-07T03:09:27.000Z">2021-12-07</time></p><p class="title"><a href="/2021/12/07/Codding/Python/kaggle_survey/kaggle-survey-graphs/">Kaggle_Survey Graphs</a></p><p class="categories"><a href="/categories/%EC%97%B0%EC%8A%B5/">연습</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/">Kaggle_Survey 2021</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-b/"><img src="/thumbnails/CS/pandas.svg" alt="Kaggle-Survey03-B: replace가 작동 안함 [pandas]"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-12-06T02:17:40.000Z">2021-12-06</time></p><p class="title"><a href="/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-b/">Kaggle-Survey03-B: replace가 작동 안함 [pandas]</a></p><p class="categories"><a href="/categories/%EC%97%B0%EC%8A%B5/">연습</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/">Kaggle_Survey 2021</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-a/"><img src="/thumbnails/CS/pandas.svg" alt="Kaggle_Survey03-A: value_counts error size 0 [pandas]"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-12-05T16:11:21.000Z">2021-12-06</time></p><p class="title"><a href="/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-a/">Kaggle_Survey03-A: value_counts error size 0 [pandas]</a></p><p class="categories"><a href="/categories/%EC%97%B0%EC%8A%B5/">연습</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/">Kaggle_Survey 2021</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/12/05/Codding/Python/kaggle_survey/kaggle-survey03/"><img src="/thumbnails/CS/plotly.svg" alt="Kaggle_Survey03: Treemap 시각화 [plotly]"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-12-05T13:55:24.000Z">2021-12-05</time></p><p class="title"><a href="/2021/12/05/Codding/Python/kaggle_survey/kaggle-survey03/">Kaggle_Survey03: Treemap 시각화 [plotly]</a></p><p class="categories"><a href="/categories/%EC%97%B0%EC%8A%B5/">연습</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</a> / <a href="/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/">Kaggle_Survey 2021</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2021/12/04/hobby/games/ftl-the-shrike/"><img src="/thumbnails/games/steam.svg" alt="슈라이크(라니우스 타입B) [FTL]"></a></figure><div class="media-content"><p class="date"><time dateTime="2021-12-04T10:33:02.000Z">2021-12-04</time></p><p class="title"><a href="/2021/12/04/hobby/games/ftl-the-shrike/">슈라이크(라니우스 타입B) [FTL]</a></p><p class="categories"><a href="/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/">취미(뻘짓중)</a> / <a href="/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/%EA%B2%8C%EC%9E%84/">게임</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/12/"><span class="level-start"><span class="level-item">12월 2021</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">11월 2021</span></span><span class="level-end"><span class="level-item tag">43</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">10월 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/DJMAX-Respect-V/"><span class="tag">DJMAX Respect V</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/R/"><span class="tag">R</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Rstudio/"><span class="tag">Rstudio</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Rtools/"><span class="tag">Rtools</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/code/"><span class="tag">code</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/css/"><span class="tag">css</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/html/"><span class="tag">html</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/js/"><span class="tag">js</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mathjax/"><span class="tag">mathjax</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/pandas/"><span class="tag">pandas</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/plotly/"><span class="tag">plotly</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/python/"><span class="tag">python</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B2%8C%EC%9E%84/"><span class="tag">게임</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/"><span class="tag">다운로드</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4/"><span class="tag">마크다운</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/"><span class="tag">블로그</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0/"><span class="tag">빅데이터</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%84%A4%EC%A0%95/"><span class="tag">설정</span><span class="tag">15</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%88%98%EC%8B%9D/"><span class="tag">수식</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9D%B8%EB%94%94%EA%B2%8C%EC%9E%84/"><span class="tag">인디게임</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A0%95%EC%9D%98/"><span class="tag">정의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A5%AC%ED%94%BC%ED%84%B0/"><span class="tag">쥬피터</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B7%A8%EB%AF%B8/"><span class="tag">취미</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/"><span class="tag">파이썬</span><span class="tag">29</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Hanga(c)k" height="28"></a><p class="is-size-7"><span>&copy; 2021 Hangack</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/hangack"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "classic",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "이 웹 사이트는 귀하의 경험을 향상시키기 위해 Cookie를 사용합니다.",
+          dismiss: "무시",
+          allow: "허용",
+          deny: "거부",
+          link: "더 알아보기",
+          policy: "Cookie 정책",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
