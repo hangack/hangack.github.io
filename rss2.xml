@@ -9,7 +9,7 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 08 Dec 2021 00:29:53 GMT</pubDate>
+    <pubDate>Wed, 08 Dec 2021 00:31:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -30,6 +30,18 @@
       <content:encoded><![CDATA[<p>어떤 작업환경을 사용하든 가능하다면 <code>UTF-8</code> 포멧으로 작업하는걸 추천한다.</p><p>pycharm에서도 인코딩 방식 변경을 지원함.</p><p>file - setting - editor - file encodings에서 Global Encoding이 <code>UTF-8</code>이 아니라면 변경해주자.</p><p>프로젝트 인코딩과 속성 파일 인코딩 방식은 OS가 윈도우라면 새 프로젝트를 열 때 마다 기본값으로 돌아갈 것이다.<br>필요한 설정이 아니라면 크게 신경쓰진 말자.</p><p><img src="\images\2112\pycharm-encoding\utf-8.png" alt="encoding"></p><p>※ 코드 파일 맨 윗단에 아래 주석을 추가하면 자동 UTF-8 인코딩 해준다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br></pre></td></tr></table></figure><p>pycharm에서 UTF-8로 변경했고 python 3++를 사용중이기에 추가할 필요는 없지만 작업 파일을 공유하거나 먼 미래에 열어볼 나를 위해 추가한다.</p>]]></content:encoded>
       
       
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EC%84%A4%EC%A0%95/">설정</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%B0%B8/">파이참</category>
       
       
       <comments>https://hangack.github.io/2021/12/08/Codding/Python/Setting/pycharm-encoding/#disqus_thread</comments>
