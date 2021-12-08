@@ -9,8 +9,32 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 05 Dec 2021 17:22:56 GMT</pubDate>
+    <pubDate>Wed, 08 Dec 2021 00:29:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>pycharm-encoding</title>
+      <link>https://hangack.github.io/2021/12/08/Codding/Python/Setting/pycharm-encoding/</link>
+      <guid>https://hangack.github.io/2021/12/08/Codding/Python/Setting/pycharm-encoding/</guid>
+      <pubDate>Wed, 08 Dec 2021 00:04:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;어떤 작업환경을 사용하든 가능하다면 &lt;code&gt;UTF-8&lt;/code&gt; 포멧으로 작업하는걸 추천한다.&lt;/p&gt;
+&lt;p&gt;pycharm에서도 인코딩 방식 변경을 지원함.&lt;/p&gt;
+&lt;p&gt;file - setting - editor - file encodings</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>어떤 작업환경을 사용하든 가능하다면 <code>UTF-8</code> 포멧으로 작업하는걸 추천한다.</p><p>pycharm에서도 인코딩 방식 변경을 지원함.</p><p>file - setting - editor - file encodings에서 Global Encoding이 <code>UTF-8</code>이 아니라면 변경해주자.</p><p>프로젝트 인코딩과 속성 파일 인코딩 방식은 OS가 윈도우라면 새 프로젝트를 열 때 마다 기본값으로 돌아갈 것이다.<br>필요한 설정이 아니라면 크게 신경쓰진 말자.</p><p><img src="\images\2112\pycharm-encoding\utf-8.png" alt="encoding"></p><p>※ 코드 파일 맨 윗단에 아래 주석을 추가하면 자동 UTF-8 인코딩 해준다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br></pre></td></tr></table></figure><p>pycharm에서 UTF-8로 변경했고 python 3++를 사용중이기에 추가할 필요는 없지만 작업 파일을 공유하거나 먼 미래에 열어볼 나를 위해 추가한다.</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>https://hangack.github.io/2021/12/08/Codding/Python/Setting/pycharm-encoding/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Kaggle_Survey Graphs</title>
@@ -25,7 +49,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="Contents"><a href="#Contents" class="headerlink" title="Contents"></a>Contents</h2><h2 id="Dynamic-plot"><a href="#Dynamic-plot" class="headerlink" title="Dynamic plot"></a>Dynamic plot</h2><p><a href="https://hangack.github.io/2021/12/02/Codding/Python/kaggle_survey/kaggle-survey01/">Kaggle_Survey01 - Pie</a></p><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/1.embed" height="525" width="100%"></iframe><p><a href="https://hangack.github.io/2021/12/03/Codding/Python/kaggle_survey/kaggle-survey02/">Kaggle_Survey02 - Bar</a></p><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/10.embed" height="525" width="100%"></iframe><p><a href="https://hangack.github.io/2021/12/05/Codding/Python/kaggle_survey/kaggle-survey03/">Kaggle_Survey03 - Treemap</a></p><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/12.embed" height="525" width="100%"></iframe><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/14.embed" height="525" width="100%"></iframe><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/16.embed" height="525" width="100%"></iframe><h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><ul><li><a href="https://www.kaggle.com/kaggle/kaggle-survey-2017">Kaggle_Survey: 2017</a></li><li><a href="https://www.kaggle.com/kaggle/kaggle-survey-2018">Kaggle_Survey: 2018</a></li><li><a href="https://www.kaggle.com/c/kaggle-survey-2019">Kaggle_Survey: 2019</a></li><li><a href="https://www.kaggle.com/c/kaggle-survey-2020">Kaggle_Survey: 2020</a></li><li><a href="https://www.kaggle.com/c/kaggle-survey-2021">Kaggle_Survey: 2021</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="Contents"><a href="#Contents" class="headerlink" title="Contents"></a>Contents</h2><h2 id="Dynamic-plot"><a href="#Dynamic-plot" class="headerlink" title="Dynamic plot"></a>Dynamic plot</h2><p><a href="https://hangack.github.io/2021/12/02/Codding/Python/kaggle_survey/kaggle-survey01/">Kaggle_Survey01 - Pie</a></p><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/1.embed" height="525" width="100%"></iframe><p><a href="https://hangack.github.io/2021/12/03/Codding/Python/kaggle_survey/kaggle-survey02/">Kaggle_Survey02 - Bar</a></p><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/10.embed" height="525" width="100%"></iframe><p><a href="https://hangack.github.io/2021/12/05/Codding/Python/kaggle_survey/kaggle-survey03/">Kaggle_Survey03 - Treemap</a></p><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/12.embed" height="525" width="100%"></iframe><iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~hangack/14.embed" height="525" width="100%"></iframe><h2 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h2><ul><li><a href="https://www.kaggle.com/kaggle/kaggle-survey-2017">Kaggle_Survey: 2017</a></li><li><a href="https://www.kaggle.com/kaggle/kaggle-survey-2018">Kaggle_Survey: 2018</a></li><li><a href="https://www.kaggle.com/c/kaggle-survey-2019">Kaggle_Survey: 2019</a></li><li><a href="https://www.kaggle.com/c/kaggle-survey-2020">Kaggle_Survey: 2020</a></li><li><a href="https://www.kaggle.com/c/kaggle-survey-2021">Kaggle_Survey: 2021</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
@@ -642,34 +666,6 @@
       
       
       <comments>https://hangack.github.io/2021/11/21/Blog/Setting/hexo-blog-category/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Hexo 블로그 Local 경로 이미지 삽입하기</title>
-      <link>https://hangack.github.io/2021/11/19/Blog/Hexo-image/</link>
-      <guid>https://hangack.github.io/2021/11/19/Blog/Hexo-image/</guid>
-      <pubDate>Fri, 19 Nov 2021 05:31:41 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;markdown 문법으로 이미지를 삽입한다면 아래 링크를 참조&lt;br&gt;&lt;a href=&quot;https://hangack.github.io/2021/11/09/Codding/MarkDown/Markdown-href-img/&quot;&gt;Markdown 하이퍼링크 이</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>markdown 문법으로 이미지를 삽입한다면 아래 링크를 참조<br><a href="https://hangack.github.io/2021/11/09/Codding/MarkDown/Markdown-href-img/">Markdown 하이퍼링크 이미지 넣기</a></p><h3 id="※-hexo-URI"><a href="#※-hexo-URI" class="headerlink" title="※ hexo URI"></a>※ hexo URI</h3><p>hexo blog에서 post를 작성할 때 기본 path URI를 알아두면 편리하게 주소를 입력할 수 있다.<br>hexo URI는 기본적으로 <code>source</code> 폴더이므로 source 이후의<code>(/경로/파일.확장자)</code>만 입력해서 Local 주소를 넣을 수 있다.</p><p>Hexo에서 지정한 default 이미지 폴더는 <code>/source/images</code>이다.</p><p>Hexo 기본 경로를 따른다면<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt</span>](<span class="link">/images/dir/file_name.extension</span>)</span><br></pre></td></tr></table></figure><br>으로 삽입하면된다.</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://hexo.io/ko/docs/asset-folders.html">Hexo Asset Folders</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
-      
-      
-      <comments>https://hangack.github.io/2021/11/19/Blog/Hexo-image/#disqus_thread</comments>
       
     </item>
     
