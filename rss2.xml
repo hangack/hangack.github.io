@@ -9,7 +9,7 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 10 Dec 2021 01:26:25 GMT</pubDate>
+    <pubDate>Fri, 10 Dec 2021 01:30:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,7 +25,7 @@
       
       
       
-      <content:encoded><![CDATA[<h2 id="가상환경"><a href="#가상환경" class="headerlink" title="가상환경"></a>가상환경</h2><p>라이브러리를 불러오다보면 의존성 패키지의 과거 버전이 필요할 때가 있다.<br>모든 패키지에 대응할 수는 없으니 파이썬이나 해당 패키지를 재설치 혹은 Downgrade를 진행해야 할 것이다.<br>위 문제를 해결할 수 있는 방법이 여러 파이썬을 생성해 각각 환경에 맞는 패키지를 설치해 따로 불러오는 방법으로 <strong>가상환경</strong>이라 한다.</p><h3 id="가상환경-생성"><a href="#가상환경-생성" class="headerlink" title="가상환경 생성"></a>가상환경 생성</h3><h4 id="설정에서-생성하기"><a href="#설정에서-생성하기" class="headerlink" title="설정에서 생성하기"></a>설정에서 생성하기</h4><p>프로젝트를 생성하고 코드 작업을 진행하다 버전 에러가 났을 때,</p><p>Files - Settings - Project: <dir> - Python Interpreter 에서 <code>Add...</code> 를 눌러 추가할 수 있다.</p><p><img src="\images\2112\pycharm-venv\env-setting1.png" alt=""></p><p>가장 기본적인 Venv를 설치할 수 있다. anaconda 설치가 됐다면 conda 환경도 추가할 수 있지만, 기본적인 파이썬 Venv 설치를 진행할 예정.<br>파이썬 exe 경로와 가상환경 dir 경로를 잘 확인해주자</p><p><img src="\images\2112\pycharm-venv\env-setting2.png" alt=""></p><h4 id="프로젝트와-같이-생성하기"><a href="#프로젝트와-같이-생성하기" class="headerlink" title="프로젝트와 같이 생성하기"></a>프로젝트와 같이 생성하기</h4><p>보통의 경우는 파이참에서 프로젝트를 생성하며 가상환경 설치를 진행할 것이다.</p><p><img src="\images\2112\pycharm-venv\env-setting2-2.png" alt=""></p><h4 id="터미널에서-생성하기"><a href="#터미널에서-생성하기" class="headerlink" title="터미널에서 생성하기"></a>터미널에서 생성하기</h4><p>파이참같은 개발환경을 사용하지 못하고 리눅스 등 환경의 터미널에서 생성해야할 경우는 <a href="https://docs.python.org/ko/3.8/library/venv.html">venv — 가상 환경 생성</a>를 참조한다.</p><h3 id="패키지-설치"><a href="#패키지-설치" class="headerlink" title="패키지 설치"></a>패키지 설치</h3><p>파이썬 가상환경을 생성했다면 사용할 패키지를 설치하면 된다.</p><p>정상적으로 설치했다면 문제 없겠지만 어느 파이썬을 참조하고 있는지 터미널에서 확인해보자.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"> #</span><span class="bash"> window</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">where</span> python</span></span><br><span class="line"><span class="meta"> #</span><span class="bash"> mac, linux .ect</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">which</span> python</span></span><br></pre></td></tr></table></figure><p><img src="\images\2112\pycharm-venv\where-python.png" alt=""></p><p>가상환경을 참조하지 못하고 있다면 아래 명령어로 (venv) 강제 진입해보자.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"> #</span><span class="bash"> window</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">source</span> ./venv/Scripts/activate</span></span><br><span class="line"><span class="meta"> #</span><span class="bash"> mac, linux .ect</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">source</span> ./venv/bin/activate</span></span><br></pre></td></tr></table></figure><h4 id="설정-interpreter에서"><a href="#설정-interpreter에서" class="headerlink" title="설정 interpreter에서"></a>설정 interpreter에서</h4><p>파이참 같은 경우엔 Python Interpreter - install 버튼을 선택해 설치할 패키지와 버전을 선택할 수 있다.</p><p><img src="\images\2112\pycharm-venv\env-setting4.png" alt=""></p><h4 id="requirements-txt"><a href="#requirements-txt" class="headerlink" title="requirements.txt"></a>requirements.txt</h4><p>버전을 일일히 기억하고 있기도 뭐하고 설치할 패키지가 많다면 하나하나 설치하는 것도 일이다.</p><p><a href="https://github.com/pycaret/pycaret/blob/master/requirements.txt">pycaret</a>같은 패키지를 보면 <code>requirements.txt</code>로 관리한다.</p><p>텍스트 파일에 원하는 패키지와 버전을 입력했다면 pip 명령어로 한번에 설치를 진행할 수 있다.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pip install -r requirements.txt</span></span><br></pre></td></tr></table></figure><h3 id="Jupyter-ipynb에서-가상환경-사용"><a href="#Jupyter-ipynb에서-가상환경-사용" class="headerlink" title="Jupyter ipynb에서 가상환경 사용"></a>Jupyter <code>ipynb</code>에서 가상환경 사용</h3><p>가상환경 이름과 표시될 이름을 설정해준다.</p><p>난 각각 <dir 이름>과 &lt;파이썬버전(dir 이름)&gt;으로 설정했다.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipython kernel install --user --name python_ml --display-name &quot;Python3(python_ml)&quot;</span><br></pre></td></tr></table></figure><p>정상적으로 등록됐다면 jupyter 환경으로 접속하면 된다.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> jupyter lab</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> jupyter notebook</span></span><br></pre></td></tr></table></figure><p>주피터 랩을 추천한다.</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://docs.python.org/ko/3.8/library/venv.html">venv — 가상 환경 생성</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="가상환경"><a href="#가상환경" class="headerlink" title="가상환경"></a>가상환경</h2><p>라이브러리를 불러오다보면 의존성 패키지의 과거 버전이 필요할 때가 있다.<br>모든 패키지에 대응할 수는 없으니 파이썬이나 해당 패키지를 재설치 혹은 Downgrade를 진행해야 할 것이다.<br>위 문제를 해결할 수 있는 방법이 여러 파이썬을 생성해 각각 환경에 맞는 패키지를 설치해 따로 불러오는 방법으로 <strong>가상환경</strong>이라 한다.</p><h3 id="가상환경-생성"><a href="#가상환경-생성" class="headerlink" title="가상환경 생성"></a>가상환경 생성</h3><h4 id="설정에서-생성하기"><a href="#설정에서-생성하기" class="headerlink" title="설정에서 생성하기"></a>설정에서 생성하기</h4><p>프로젝트를 생성하고 코드 작업을 진행하다 버전 에러가 났을 때,</p><p>Files - Settings - Project: <dir> - Python Interpreter 에서 <code>Add...</code> 를 눌러 추가할 수 있다.</p><p><img src="\images\2112\pycharm-venv\env-setting1.png" alt=""></p><p>가장 기본적인 Venv를 설치할 수 있다. anaconda 설치가 됐다면 conda 환경도 추가할 수 있지만, 기본적인 파이썬 Venv 설치를 진행할 예정.<br>파이썬 exe 경로와 가상환경 dir 경로를 잘 확인해주자</p><p><img src="\images\2112\pycharm-venv\env-setting2.png" alt=""></p><h4 id="프로젝트와-같이-생성하기"><a href="#프로젝트와-같이-생성하기" class="headerlink" title="프로젝트와 같이 생성하기"></a>프로젝트와 같이 생성하기</h4><p>보통의 경우는 파이참에서 프로젝트를 생성하며 가상환경 설치를 진행할 것이다.</p><p><img src="\images\2112\pycharm-venv\env-setting2-2.png" alt=""></p><h4 id="터미널에서-생성하기"><a href="#터미널에서-생성하기" class="headerlink" title="터미널에서 생성하기"></a>터미널에서 생성하기</h4><p>파이참같은 개발환경을 사용하지 못하고 리눅스 등 환경의 터미널에서 생성해야할 경우는 <a href="https://docs.python.org/ko/3.8/library/venv.html">venv — 가상 환경 생성</a>를 참조한다.</p><h2 id="패키지-설치"><a href="#패키지-설치" class="headerlink" title="패키지 설치"></a>패키지 설치</h2><p>파이썬 가상환경을 생성했다면 사용할 패키지를 설치하면 된다.</p><p>정상적으로 설치했다면 문제 없겠지만 어느 파이썬을 참조하고 있는지 터미널에서 확인해보자.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"> #</span><span class="bash"> window</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">where</span> python</span></span><br><span class="line"><span class="meta"> #</span><span class="bash"> mac, linux .ect</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">which</span> python</span></span><br></pre></td></tr></table></figure><p><img src="\images\2112\pycharm-venv\where-python.png" alt=""></p><p>가상환경을 참조하지 못하고 있다면 아래 명령어로 (venv) 강제 진입해보자.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"> #</span><span class="bash"> window</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">source</span> ./venv/Scripts/activate</span></span><br><span class="line"><span class="meta"> #</span><span class="bash"> mac, linux .ect</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">source</span> ./venv/bin/activate</span></span><br></pre></td></tr></table></figure><h3 id="설정-interpreter에서"><a href="#설정-interpreter에서" class="headerlink" title="설정 interpreter에서"></a>설정 interpreter에서</h3><p>파이참 같은 경우엔 Python Interpreter - install 버튼을 선택해 설치할 패키지와 버전을 선택할 수 있다.</p><p><img src="\images\2112\pycharm-venv\env-setting4.png" alt=""></p><h3 id="requirements-txt"><a href="#requirements-txt" class="headerlink" title="requirements.txt"></a>requirements.txt</h3><p>버전을 일일히 기억하고 있기도 뭐하고 설치할 패키지가 많다면 하나하나 설치하는 것도 일이다.</p><p><a href="https://github.com/pycaret/pycaret/blob/master/requirements.txt">pycaret</a>같은 패키지를 보면 <code>requirements.txt</code>로 관리한다.</p><p>텍스트 파일에 원하는 패키지와 버전을 입력했다면 pip 명령어로 한번에 설치를 진행할 수 있다.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pip install -r requirements.txt</span></span><br></pre></td></tr></table></figure><h2 id="Jupyter-ipynb에서-가상환경-사용"><a href="#Jupyter-ipynb에서-가상환경-사용" class="headerlink" title="Jupyter ipynb에서 가상환경 사용"></a>Jupyter <code>ipynb</code>에서 가상환경 사용</h2><p>가상환경 이름과 표시될 이름을 설정해준다.</p><p>난 각각 <dir 이름>과 &lt;파이썬버전(dir 이름)&gt;으로 설정했다.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipython kernel install --user --name python_ml --display-name &quot;Python3(python_ml)&quot;</span><br></pre></td></tr></table></figure><p>정상적으로 등록됐다면 jupyter 환경으로 접속하면 된다.</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> jupyter lab</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> jupyter notebook</span></span><br></pre></td></tr></table></figure><p>주피터 랩을 추천한다.</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://docs.python.org/ko/3.8/library/venv.html">venv — 가상 환경 생성</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
@@ -43,42 +43,6 @@
       
       
       <comments>https://hangack.github.io/2021/12/09/Codding/Python/Setting/pycharm-venv/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>파이참, 파이썬 인코딩 설정</title>
-      <link>https://hangack.github.io/2021/12/08/Codding/Python/Setting/pycharm-encoding/</link>
-      <guid>https://hangack.github.io/2021/12/08/Codding/Python/Setting/pycharm-encoding/</guid>
-      <pubDate>Wed, 08 Dec 2021 00:04:22 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;어떤 작업환경을 사용하든 가능하다면 &lt;code&gt;UTF-8&lt;/code&gt; 포멧으로 작업하는걸 추천한다.&lt;/p&gt;
-&lt;p&gt;pycharm에서도 인코딩 방식 변경을 지원함.&lt;/p&gt;
-&lt;p&gt;file - setting - editor - file encodings</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>어떤 작업환경을 사용하든 가능하다면 <code>UTF-8</code> 포멧으로 작업하는걸 추천한다.</p><p>pycharm에서도 인코딩 방식 변경을 지원함.</p><p>file - setting - editor - file encodings에서 Global Encoding이 <code>UTF-8</code>이 아니라면 변경해주자.</p><p>프로젝트 인코딩과 속성 파일 인코딩 방식은 OS가 윈도우라면 새 프로젝트를 열 때 마다 기본값으로 돌아갈 것이다.<br>필요한 설정이 아니라면 크게 신경쓰진 말자.</p><p><img src="\images\2112\pycharm-encoding\utf-8.png" alt="encoding"></p><p>※ 코드 파일 맨 윗단에 아래 주석을 추가하면 자동 UTF-8 인코딩 해준다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br></pre></td></tr></table></figure><p>pycharm에서 UTF-8로 변경했고 python 3++를 사용중이기에 추가할 필요는 없지만 작업 파일을 공유하거나 먼 미래에 열어볼 나를 위해 추가한다.</p>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
-      
-      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%B0%B8/">파이참</category>
-      
-      
-      <comments>https://hangack.github.io/2021/12/08/Codding/Python/Setting/pycharm-encoding/#disqus_thread</comments>
       
     </item>
     
@@ -478,9 +442,9 @@
       
       <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
       
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
       <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
       
       <category domain="https://hangack.github.io/tags/css/">css</category>
       
@@ -546,9 +510,9 @@
       
       <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
       
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
       <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
       
       
       <comments>https://hangack.github.io/2021/11/25/Blog/Setting/hexo-blog-clone-theme/#disqus_thread</comments>
@@ -578,9 +542,9 @@
       
       <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
       
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
       <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
       
       
       <comments>https://hangack.github.io/2021/11/24/Blog/Setting/hexo-blog-utterances/#disqus_thread</comments>
@@ -610,9 +574,9 @@
       
       <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
       
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
       <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
       
       
       <comments>https://hangack.github.io/2021/11/23/Blog/Setting/hexo-blog-img/#disqus_thread</comments>
@@ -642,9 +606,9 @@
       
       <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
       
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
       <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
       
       
       <comments>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-sidebar-sticky/#disqus_thread</comments>
@@ -674,12 +638,44 @@
       
       <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
       
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
       <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
       
       
       <comments>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-toc/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo Blog Category 사용하기</title>
+      <link>https://hangack.github.io/2021/11/21/Blog/Setting/hexo-blog-category/</link>
+      <guid>https://hangack.github.io/2021/11/21/Blog/Setting/hexo-blog-category/</guid>
+      <pubDate>Sat, 20 Nov 2021 23:45:32 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;Category&quot;&gt;&lt;a href=&quot;#Category&quot; class=&quot;headerlink&quot; title=&quot;Category&quot;&gt;&lt;/a&gt;Category&lt;/h2&gt;&lt;center&gt;&lt;img src=&quot;\images\2111\Heox_blog_Category</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="Category"><a href="#Category" class="headerlink" title="Category"></a>Category</h2><center><img src="\images\2111\Heox_blog_Category\category.png" alt="ㅏㅏ 이것이 Category란 것이다"></center><h2 id="Hexo-Category-설정하기"><a href="#Hexo-Category-설정하기" class="headerlink" title="Hexo Category 설정하기"></a>Hexo Category 설정하기</h2><p>Hexo를 처음 사용한다면 Front-matter 영역에는 기본적으로 title, date, tags만 나와있을 것이다.</p><p>순서는 상관 없으니 <code>categories:</code>를 추가하자.<br>참고로 <code>categories</code>와 <code>tags</code>는 <code>-</code> 로 관리할 수 있다.<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> &#123;&#123; <span class="string">title</span> &#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123; <span class="string">date</span> &#125;&#125;</span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"> <span class="bullet">-</span> </span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"> <span class="bullet">-</span> </span><br></pre></td></tr></table></figure></p><p>※ 태그와 카테고리의 가장 큰 차이점: 카테고리는 하위 <code>-</code>로 하위 카테고리가 생성되지만, 태그는 하위 태그의 개념이 없다.</p><h3 id="scaffolds로-post-기본설정하기"><a href="#scaffolds로-post-기본설정하기" class="headerlink" title="scaffolds로 post 기본설정하기"></a>scaffolds로 post 기본설정하기</h3><p>포스팅이 한두개도 아니고 포스팅을 할 때마다 <code>categories:</code>를 넣어주는건 너무나도 귀찮은 방식이다.</p><p><code>\scaffolds\post.md</code>를 원하는 형식으로 수정하면 <code>hexo new</code>명령어로 post를 생성할 때 불러오는 기본 양식을 바꿀 수 있다.</p><p>만약 <a href="https://hangack.github.io/2021/11/16/Blog/hexo-post-private/">Hexo draft</a>로 신규 post를 관리한다면 <code>draft.md</code>를 수정해주면 된다.</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://hexo.io/ko/docs/front-matter.html">Hexo Front-matter</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
+      
+      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/%EC%84%A4%EC%A0%95/">설정</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
+      
+      <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
+      
+      
+      <comments>https://hangack.github.io/2021/11/21/Blog/Setting/hexo-blog-category/#disqus_thread</comments>
       
     </item>
     
