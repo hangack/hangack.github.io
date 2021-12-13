@@ -45,6 +45,40 @@
     </item>
     
     <item>
+      <title>파이참 파일 확장자 타입 변경하기</title>
+      <link>https://hangack.github.io/2021/12/11/Codding/Python/Setting/pycharm-file-type/</link>
+      <guid>https://hangack.github.io/2021/12/11/Codding/Python/Setting/pycharm-file-type/</guid>
+      <pubDate>Sat, 11 Dec 2021 00:34:18 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;파이참에서 파일을 만들다보면 확장자명을 지정하지 않고 파일을 만드면서 text 형식으로 지정하는 경우가 있다.&lt;br&gt;보통의 경우 auto-detected이지만, 잘못 지정하면 확장자를 바꿔도 기존에 지정한 형식으로 읽어온다.&lt;br&gt;이 경우 지정한</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>파이참에서 파일을 만들다보면 확장자명을 지정하지 않고 파일을 만드면서 text 형식으로 지정하는 경우가 있다.<br>보통의 경우 auto-detected이지만, 잘못 지정하면 확장자를 바꿔도 기존에 지정한 형식으로 읽어온다.<br>이 경우 지정한 형식을 제거해주면 된다.</p><p><img src="\images\2112\pycharm-filetype\filetypes.png" alt=""></p><p>Setting - File Types</p>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EC%84%A4%EC%A0%95/">설정</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%B0%B8/">파이참</category>
+      
+      
+      <comments>https://hangack.github.io/2021/12/11/Codding/Python/Setting/pycharm-file-type/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>파이참 가상환경 생성</title>
       <link>https://hangack.github.io/2021/12/09/Codding/Python/Setting/pycharm-venv/</link>
       <guid>https://hangack.github.io/2021/12/09/Codding/Python/Setting/pycharm-venv/</guid>
@@ -648,38 +682,6 @@
       
       
       <comments>https://hangack.github.io/2021/11/23/Blog/Setting/hexo-blog-img/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>hexo blog sidebar 트래킹과 post 개별 설정</title>
-      <link>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-sidebar-sticky/</link>
-      <guid>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-sidebar-sticky/</guid>
-      <pubDate>Mon, 22 Nov 2021 11:42:59 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;toc&quot;&gt;&lt;a href=&quot;#toc&quot; class=&quot;headerlink&quot; title=&quot;toc&quot;&gt;&lt;/a&gt;toc&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://hangack.github.io/2021/11/22/Blog/Setting/hexo-bl</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="toc"><a href="#toc" class="headerlink" title="toc"></a>toc</h2><p><a href="https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-toc/">Hexo toc(Katalog) 사용하기</a>에서 toc(Katalog)를 적용해 봤다.</p><h2 id="sidebar-sticky"><a href="#sidebar-sticky" class="headerlink" title="sidebar sticky"></a>sidebar sticky</h2><p>하지만 sidebar가 트래킹되지 않아 불편하다.<br>현재 사용하는 icarus테마는 <code>_config.theme.yml</code>에서 다양한 옵션을 제공한다. 그 중 <code>sidebar - left(or right) - sticky</code>옵션이 트래킹 옵션이다.</p><p>위젯 박스를 왼쪽만 사용하고 있으니<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span></span><br><span class="line">    <span class="comment"># Left sidebar configurations</span></span><br><span class="line">    <span class="attr">left:</span></span><br><span class="line">        <span class="comment"># Whether the sidebar sticks to the top when page scrolls</span></span><br><span class="line">        <span class="attr">sticky:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><br>로 설정하면 언제 어디서나 sidebar가 트래킹된다.</p><p>그렇다 어디서든 언제언제까지나 트래킹되는게 문제다.</p><p>원하는 방식은 특정 post를 읽을 때만 트래킹되는 방식이었으니 _config.theme.yml의 sticky 값은 다시 <code>false</code>로 돌려놓자.</p><h2 id="post-개별-설정"><a href="#post-개별-설정" class="headerlink" title="post 개별 설정"></a>post 개별 설정</h2><p>우리에겐 scaffolds 디렉토리 내 post 기본 양식 설정과 <code>_config.theme.yml</code>에서 가져올 위젯 및 sidebar의 yml 양식이 있다.</p><p>그리고 이전 포스트에서 링크한 <a href="https://hexo.io/ko/docs/front-matter.html">Hexo Front-matter</a>에선<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><br>내부 양식이 <code>yaml</code>이라 한다.</p><p>넣을 코드와 코드를 넣을 공간이 준비되었고 작성한 양식을 불러올 방법도 있으니 우리는 <code>draft.md</code>와 <code>post.md</code>를 수정하기만 하면 된다.<br><del>설정 전에 작성한 포스트가 많다면..야 너두?</del></p><p>toc 트래킹만 사용한다면 아래 코드를 넣어주면 된다.<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span></span><br><span class="line">  <span class="attr">left:</span></span><br><span class="line">    <span class="attr">sticky:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">widgets:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">toc</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span></span><br><span class="line">    <span class="attr">index:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></p><p>개별 설정의 단점은 _config의 모든 설정을 불러오지는 않기 때문에 각종 옵션을 넣는다면<br><figure class="highlight yaml"><figcaption><span>draft.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> &#123;&#123; <span class="string">title</span> &#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123; <span class="string">date</span> &#125;&#125;</span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"> <span class="bullet">-</span> </span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"> <span class="bullet">-</span> </span><br><span class="line"><span class="attr">sidebar:</span></span><br><span class="line">  <span class="attr">left:</span></span><br><span class="line">    <span class="attr">sticky:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">widgets:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">profile</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span></span><br><span class="line">    <span class="attr">social_links:</span></span><br><span class="line">        <span class="attr">Github:</span></span><br><span class="line">            <span class="attr">icon:</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">            <span class="attr">url:</span> <span class="string">&#x27;https://github.com/hangack&#x27;</span></span><br><span class="line">        <span class="attr">Youtube:</span></span><br><span class="line">            <span class="attr">icon:</span> <span class="string">fab</span> <span class="string">fa-youtube</span></span><br><span class="line">            <span class="attr">url:</span> <span class="string">&#x27;https://www.youtube.com/channel/UCQuHrr7-mBtutw9V94XGH-g&#x27;</span></span><br><span class="line">        <span class="attr">Twitch:</span></span><br><span class="line">            <span class="attr">icon:</span> <span class="string">fab</span> <span class="string">fa-twitch</span></span><br><span class="line">            <span class="attr">url:</span> <span class="string">&#x27;https://www.twitch.tv/hangack&#x27;</span></span><br><span class="line">        <span class="attr">Steam:</span></span><br><span class="line">            <span class="attr">icon:</span> <span class="string">fab</span> <span class="string">fa-steam</span></span><br><span class="line">            <span class="attr">url:</span> <span class="string">&#x27;https://steamcommunity.com/id/HanGack/&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">toc</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span></span><br><span class="line">    <span class="attr">index:</span> <span class="literal">false</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">categories</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure><br>Wa!</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://hexo.io/ko/docs/front-matter.html">Hexo Front-matter</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
-      
-      
-      <comments>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-sidebar-sticky/#disqus_thread</comments>
       
     </item>
     
