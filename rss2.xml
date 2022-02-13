@@ -9,8 +9,72 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 25 Jan 2022 08:33:35 GMT</pubDate>
+    <pubDate>Sun, 13 Feb 2022 23:52:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>unique 객체만 포함하는 set</title>
+      <link>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/</link>
+      <guid>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/</guid>
+      <pubDate>Mon, 07 Feb 2022 06:45:16 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;특정 집합을 만들다보니 같은 값이 저장되지 않는 리스트를 만들 필요가 생겼다.&lt;br&gt;set() 형식을 사용하면 unique한 객체만 포함하는 집합을 만들 수 있다.&lt;/p&gt;
+&lt;p&gt;단, 사용하려면 &lt;code&gt;set()&lt;/code&gt;으로 객체를 초기화 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>특정 집합을 만들다보니 같은 값이 저장되지 않는 리스트를 만들 필요가 생겼다.<br>set() 형식을 사용하면 unique한 객체만 포함하는 집합을 만들 수 있다.</p><p>단, 사용하려면 <code>set()</code>으로 객체를 초기화 해야한다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> = <span class="built_in">set</span>([<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">31</span>])</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">set</span>)</span><br></pre></td></tr></table></figure><pre><code>&#123;1, 2, 3, 10, 31&#125;</code></pre><p>dictionary와 동일한 <code>&#123;</code>, <code>&#125;</code>로 사용되지만 dictionary와 다르게 key가 없는 list 형식이다.</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://wikidocs.net/16044">set(집합)</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EA%B8%B0%EC%B4%88/">기초</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      
+      <comments>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>datetime 날짜와 시간</title>
+      <link>https://hangack.github.io/2022/02/04/Codding/Python/basic_module/datetime-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%9C%EA%B0%84/</link>
+      <guid>https://hangack.github.io/2022/02/04/Codding/Python/basic_module/datetime-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%9C%EA%B0%84/</guid>
+      <pubDate>Thu, 03 Feb 2022 17:14:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;datatime&quot;&gt;&lt;a href=&quot;#datatime&quot; class=&quot;headerlink&quot; title=&quot;datatime&quot;&gt;&lt;/a&gt;datatime&lt;/h2&gt;&lt;p&gt;datetime 모듈은 특정 시간과 날짜를 불러오는 파이썬 내장 모듈이다.&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="datatime"><a href="#datatime" class="headerlink" title="datatime"></a>datatime</h2><p>datetime 모듈은 특정 시간과 날짜를 불러오는 파이썬 내장 모듈이다.</p><h3 id="날짜와-시간-함수"><a href="#날짜와-시간-함수" class="headerlink" title="날짜와 시간 함수"></a>날짜와 시간 함수</h3><p>datatime 모듈을 사용하면 시간 날짜 UTC timezone을 불러올 수 있고, 내장 함수로 <code>data</code>, <code>time</code> 등을 사용해 날짜 혹은 시간만 지정하고 특정 시간대를 지정해 불러올 수도 있다.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(datetime.date.today())</span><br><span class="line"><span class="built_in">print</span>(datetime.datetime.today())</span><br><span class="line"><span class="built_in">print</span>(datetime.time(<span class="number">12</span>,<span class="number">59</span>,<span class="number">33</span>, microsecond=<span class="number">333333</span>, tzinfo=datetime.timezone.utc))</span><br></pre></td></tr></table></figure><br>    2022-02-03<br>    2022-02-03 03:36:07.407621<br>    12:59:33.333333+00:00</p><h3 id="strftime-원하는-형식으로-변경"><a href="#strftime-원하는-형식으로-변경" class="headerlink" title="strftime(원하는 형식으로 변경)"></a>strftime(원하는 형식으로 변경)</h3><p>strftime을 사용하면 불러온 시간을 원하는 형식으로 바꿀 수 있다.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(datetime.datetime.today().strftime(<span class="string">&quot;%Y/%m/%d %H:%M:%S&quot;</span>))</span><br></pre></td></tr></table></figure><br>    2022/02/03 03:40:36</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://docs.python.org/ko/3/library/datetime.html">datatime — 기본 날짜와 시간 형</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/%EB%AA%A8%EB%93%88/">모듈</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/tags/datetime/">datetime</category>
+      
+      
+      <comments>https://hangack.github.io/2022/02/04/Codding/Python/basic_module/datetime-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%9C%EA%B0%84/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>selenium 사용하기</title>
@@ -620,70 +684,6 @@
       
       
       <comments>https://hangack.github.io/2021/11/27/hobby/games/djmax-1st15max/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>블로그 테마 세부설정을 위한 clone theme</title>
-      <link>https://hangack.github.io/2021/11/25/Blog/Setting/hexo-blog-clone-theme/</link>
-      <guid>https://hangack.github.io/2021/11/25/Blog/Setting/hexo-blog-clone-theme/</guid>
-      <pubDate>Wed, 24 Nov 2021 20:35:36 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;문제-발생&quot;&gt;&lt;a href=&quot;#문제-발생&quot; class=&quot;headerlink&quot; title=&quot;문제 발생&quot;&gt;&lt;/a&gt;문제 발생&lt;/h2&gt;&lt;p&gt;테마 스타일 커스텀을 하려 봤더니 Hexo v5 이후 방식인 npm으로 _config.icarus만 불러</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="문제-발생"><a href="#문제-발생" class="headerlink" title="문제 발생"></a>문제 발생</h2><p>테마 스타일 커스텀을 하려 봤더니 Hexo v5 이후 방식인 npm으로 _config.icarus만 불러왔던 <a href="https://hangack.github.io/2021/11/02/Blog/Setting/Hexo-blog-theme/">방식</a>이 내 발목을 잡았다.</p><p>theme를 처음부터 다시 받아야할까?</p><p><em>태초마을인가 그릉가?</em></p><h2 id="테마-폴더-끌어오기"><a href="#테마-폴더-끌어오기" class="headerlink" title="테마 폴더 끌어오기"></a>테마 폴더 끌어오기</h2><p>그럴필욘 없고 themes 디렉토리에 테마 세부 설정을 위한 패키지만 받아오면 된다.</p><p>과거에 설정했던 <a href="https://github.com/ppoffice/hexo-theme-icarus">테마 깃허브</a>에 들어가서 Clone url을 받는다.</p><p>다음으로 <code>\themes\</code> 경로에 <code>$ git clone</code>하면되지만, <a href="https://chinsun9.github.io/2020/11/12/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/">themes 폴더에 icarus 테마깔기</a>에서 좋은 제안을 발견했다.<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> --depth 1 https://github.com/ppoffice/hexo-theme-icarus.git</span></span><br></pre></td></tr></table></figure></p><p>마지막으로 테마명을 일치시키기 위해 불러온 hexo-theme-icarus 디렉토리를 icarus로 변경해줬다.</p><p>가장 답답했던 페이지 가로축 범위 조정도 <a href="https://chinsun9.github.io/2020/11/12/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/">hexo icarus 테마에 커스텀 레이아웃, 스타일(css) 적용하기</a>에서 적용법을 확인할 수 있었다.</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://chinsun9.github.io/2020/11/12/%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/">hexo icarus 테마에 커스텀 레이아웃, 스타일(css) 적용하기</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
-      
-      
-      <comments>https://hangack.github.io/2021/11/25/Blog/Setting/hexo-blog-clone-theme/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>블로그 댓글 utterances 사용하기</title>
-      <link>https://hangack.github.io/2021/11/24/Blog/Setting/hexo-blog-utterances/</link>
-      <guid>https://hangack.github.io/2021/11/24/Blog/Setting/hexo-blog-utterances/</guid>
-      <pubDate>Tue, 23 Nov 2021 21:17:54 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h2 id=&quot;utterances-세팅&quot;&gt;&lt;a href=&quot;#utterances-세팅&quot; class=&quot;headerlink&quot; title=&quot;utterances 세팅&quot;&gt;&lt;/a&gt;utterances 세팅&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://utteranc.</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h2 id="utterances-세팅"><a href="#utterances-세팅" class="headerlink" title="utterances 세팅"></a>utterances 세팅</h2><p><a href="https://utteranc.es/">utterances</a>에 들어가서 설명을 읽어보는게 좋다.</p><h3 id="github-repo-생성"><a href="#github-repo-생성" class="headerlink" title="github repo 생성"></a>github repo 생성</h3><p>사용하기 위해 개인 github에 comment용 <strong>public</strong> repository를 생성한다.</p><center><img src="\images\2111\hexo_blog_utterances\new repo.png"></center><p>굳이 repo를 생성하고 싶지 않다면 userID.github.io repo를 사용해도 된다.</p><h3 id="app-설치"><a href="#app-설치" class="headerlink" title="app 설치"></a>app 설치</h3><p><a href="https://github.com/apps/utterances">utterances app</a>에 들어가서 github에 app을 설치하자.<br>나는 comment가 들어갈 repo인 <code>hangack_blog_comment</code>만 지정했다.</p><h3 id="요소-설정하기"><a href="#요소-설정하기" class="headerlink" title="요소 설정하기"></a>요소 설정하기</h3><p><code>repo:</code>박스에 위에서 생성한 개인 <code>userID/repoName</code>을 입력한다.</p><center><img src="\images\2111\hexo_blog_utterances\issue mapping.png"></center><p><strong>Blog Post ↔️ Issue Mapping</strong> 방식은 현재 상황엔 별로 중요하지 않지만 개인 세팅에 따라 반드시 특정 세팅을 지정할 필요도 있을 것이다.</p><ol><li>pathname<ul><li>포스트의 URI로 issue가 생성된다. URI가 바꼈을 때 문제가 될지도?</li></ul></li><li>URL<ul><li>URL 기준으로 생성</li></ul></li><li>title<ul><li>포스트 제목</li></ul></li><li>og:title<ul><li>open_graphic 제목</li></ul></li><li>Specific issue number<ul><li>이슈 번호를 생성해서 작성된다.</li></ul></li><li>specific term<ul><li>포스트 제목에 기입된 특정 단어를 기준으로 작성된다.</li></ul></li></ol><h2 id="댓글-위젯-넣기"><a href="#댓글-위젯-넣기" class="headerlink" title="댓글 위젯 넣기"></a>댓글 위젯 넣기</h2><h3 id="utterances에서-제안된-방식"><a href="#utterances에서-제안된-방식" class="headerlink" title="utterances에서 제안된 방식"></a>utterances에서 제안된 방식</h3><p>테마 등 설정을 전부 끝냈다면 <strong>Enable Utterances</strong> 분류에 script 코드가 생겼을 것이다.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://utteranc.es/client.js&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">repo</span>=<span class="string">&quot;userID/repoName&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">issue-term</span>=<span class="string">&quot;pathname&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">theme</span>=<span class="string">&quot;github-light&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">async</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>이 코드를 post마다 넣어주면된다.</p><p>hexo의 경우엔 post.md 혹은 draft.md로 불러올 수 있겠지</p><h3 id="hexo-icarus에서"><a href="#hexo-icarus에서" class="headerlink" title="hexo icarus에서"></a>hexo icarus에서</h3><p>icarus에서는 utterances 타입을 지원하기에 <code>_config.theme.yml</code>에 comment 항목을 찾아서 아래 형식대로 기입하자.</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">utterances</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">userID/repoName</span></span><br><span class="line">    <span class="attr">issue_term:</span> <span class="string">pathname</span></span><br><span class="line">    <span class="attr">theme:</span> <span class="string">github-light</span></span><br><span class="line">    <span class="attr">crossorigin:</span> <span class="string">anonymous</span></span><br></pre></td></tr></table></figure><h3 id="어-안되잖아"><a href="#어-안되잖아" class="headerlink" title="어? 안되잖아?"></a>어? 안되잖아?</h3><p><code>utterances.json</code> 파일을 뜯어봤더니 crossorigin 요소에 대한 처리 방식이 없었다.</p><p>반면, <code>utterances.js</code> 파일에선 <code>&quot;crossorigin&quot;: &quot;anonymous&quot;</code>로 기본값을 지정했기에 문제없다 판단하고 요소를 제거</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">utterances</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">userID/repoName</span></span><br><span class="line">    <span class="attr">issue_term:</span> <span class="string">pathname</span></span><br><span class="line">    <span class="attr">theme:</span> <span class="string">github-light</span></span><br></pre></td></tr></table></figure><p>댓글댓글단다</p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://chinsun9.github.io/2021/06/08/blog-comment-migration-from-disqus-to-utterances/">disqus에서 utterances로 바꾸기</a></li><li><a href="http://astrod.github.io/etc/2018/05/28/utterances-%EC%A0%81%EC%9A%A9/">utterances 적용</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      <category domain="https://hangack.github.io/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/">블로그</category>
-      
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      <category domain="https://hangack.github.io/tags/hexo/">hexo</category>
-      
-      
-      <comments>https://hangack.github.io/2021/11/24/Blog/Setting/hexo-blog-utterances/#disqus_thread</comments>
       
     </item>
     

@@ -9,6 +9,30 @@
 
 
     <url>
+        <loc>https://hangack.github.io/2022/02/04/Codding/Python/basic_module/datetime-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%9C%EA%B0%84/</loc>
+        <lastmod>2022-02-13T23:52:14.693Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/</loc>
+        <lastmod>2022-02-13T23:52:14.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/02/Codding/Python/basic_module/python14-%EB%AA%A8%EB%93%88_numpy/</loc>
+        <lastmod>2022-02-13T23:42:00.229Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://hangack.github.io/2022/01/16/Codding/Python/crawling/selenium-driver/</loc>
         <lastmod>2022-01-25T08:33:35.841Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -211,14 +235,6 @@
     <url>
         <loc>https://hangack.github.io/2021/11/07/Codding/Python/Setting/ipynb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2021-11-28T07:16:51.221Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/02/Codding/Python/basic_module/python14-%EB%AA%A8%EB%93%88_numpy/</loc>
-        <lastmod>2021-11-28T07:14:05.086Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
