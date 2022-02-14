@@ -9,8 +9,160 @@
 
 
     <url>
+        <loc>https://hangack.github.io/2022/01/20/Codding/Python/crawling/bs4-find%EC%99%80-select/</loc>
+        <lastmod>2022-02-14T15:52:12.228Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/01/Codding/R/r-setting/</loc>
+        <lastmod>2022-02-14T08:08:47.354Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/02/Codding/Python/kaggle_survey/kaggle-survey01/</loc>
+        <lastmod>2022-02-14T08:08:47.323Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/16/Blog/hexo-post-private/</loc>
+        <lastmod>2022-02-14T08:08:47.262Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/01/Blog/Setting/Hexo-blog/</loc>
+        <lastmod>2022-02-14T08:08:47.248Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/18/Codding/Python/kaggle_survey/kaggle-survey00/</loc>
+        <lastmod>2022-02-14T08:08:47.208Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/23/Blog/Setting/hexo-blog-img/</loc>
+        <lastmod>2022-02-14T08:08:47.157Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/07/Codding/Python/kaggle_survey/kaggle-survey-graphs/</loc>
+        <lastmod>2022-02-14T08:08:47.143Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/03/Codding/Python/basic_module/Matplotlib%27s%20pyplot%20%26%20pyplot.subplots/</loc>
+        <lastmod>2022-02-14T08:08:47.083Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/07/Codding/Python/Setting/ipynb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2022-02-14T08:08:47.067Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/21/Blog/Setting/hexo-blog-category/</loc>
+        <lastmod>2022-02-14T08:08:47.039Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/02/Blog/Setting/Hexo-blog-theme/</loc>
+        <lastmod>2022-02-14T08:08:47.026Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/13/Blog/Setting/Hexo-blog-mathjax/</loc>
+        <lastmod>2022-02-14T08:08:47.011Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/25/Blog/Setting/hexo-blog-clone-theme/</loc>
+        <lastmod>2022-02-14T08:08:46.961Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/11/Codding/Python/kaggle_survey/Data-Transformation-input-num/</loc>
+        <lastmod>2022-02-14T08:08:46.946Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</loc>
-        <lastmod>2022-02-14T02:26:31.164Z</lastmod>
+        <lastmod>2022-02-14T08:08:46.849Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/15/Codding/MarkDown/markdown-mathjax/</loc>
+        <lastmod>2022-02-14T08:08:46.836Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/09/Codding/MarkDown/Markdown-href-img/</loc>
+        <lastmod>2022-02-14T08:08:46.821Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/17/Blog/Hexo-blog-page-about/</loc>
+        <lastmod>2022-02-14T08:08:46.659Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/10/31/Blog/Setting/Pycharm-Terminal-git/</loc>
+        <lastmod>2022-02-14T08:08:46.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,7 +170,95 @@
 
     <url>
         <loc>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-list-set/</loc>
-        <lastmod>2022-02-14T02:26:31.128Z</lastmod>
+        <lastmod>2022-02-14T08:08:46.628Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/30/Blog/iframe-plotly/</loc>
+        <lastmod>2022-02-14T08:08:46.613Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/28/Blog/Setting/hexo-blog-style/</loc>
+        <lastmod>2022-02-14T08:08:46.599Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/09/Codding/Python/Setting/pycharm-venv/</loc>
+        <lastmod>2022-02-14T08:08:46.579Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/09/Codding/Python/Setting/Jupyter-ModuleNotFound/</loc>
+        <lastmod>2022-02-14T08:08:46.536Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-a/</loc>
+        <lastmod>2022-02-14T08:08:46.489Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/04/Big_data/Decision-Tree/</loc>
+        <lastmod>2022-02-14T08:08:46.451Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/12/Blog/Setting/git-bash-%EC%97%B0%EB%8F%99/</loc>
+        <lastmod>2022-02-14T08:08:46.437Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/12/Big_data/MAE-MSE-RMSE/</loc>
+        <lastmod>2022-02-14T08:08:46.423Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/07/Codding/Python/Setting/jupyter-change-path/</loc>
+        <lastmod>2022-02-14T08:08:46.409Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/05/Codding/Python/kaggle_survey/kaggle-survey03/</loc>
+        <lastmod>2022-02-14T08:08:46.378Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2022/02/02/Codding/Python/basic_module/time-%EB%AA%A8%EB%93%88%EB%A1%9C-%EC%9D%BC%EC%8B%9C%EC%A0%95%EC%A7%80/</loc>
+        <lastmod>2022-02-14T08:08:46.334Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,7 +266,55 @@
 
     <url>
         <loc>https://hangack.github.io/2022/02/04/Codding/Python/basic_module/datetime-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%9C%EA%B0%84/</loc>
-        <lastmod>2022-02-13T23:52:14.693Z</lastmod>
+        <lastmod>2022-02-14T08:08:46.319Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-b/</loc>
+        <lastmod>2022-02-14T08:08:46.306Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/03/Codding/Python/kaggle_survey/kaggle-survey02/</loc>
+        <lastmod>2022-02-14T08:08:46.241Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-sidebar-sticky/</loc>
+        <lastmod>2022-02-14T08:08:46.198Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/24/Blog/Setting/hexo-blog-utterances/</loc>
+        <lastmod>2022-02-14T08:08:46.182Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/11/19/Blog/Hexo-image/</loc>
+        <lastmod>2022-02-14T08:08:46.165Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2021/12/04/hobby/games/altf4/</loc>
+        <lastmod>2022-02-14T02:46:15.109Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -73,78 +361,6 @@
     </url>
 
     <url>
-        <loc>https://hangack.github.io/2021/12/09/Codding/Python/Setting/pycharm-venv/</loc>
-        <lastmod>2021-12-10T01:30:34.706Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/07/Codding/Python/kaggle_survey/kaggle-survey-graphs/</loc>
-        <lastmod>2021-12-07T04:03:15.849Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-b/</loc>
-        <lastmod>2021-12-07T02:21:45.054Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/03/Codding/Python/kaggle_survey/kaggle-survey02/</loc>
-        <lastmod>2021-12-06T05:20:31.366Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/06/Codding/Python/kaggle_survey/kaggle-survey03-a/</loc>
-        <lastmod>2021-12-06T05:20:31.315Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/18/Codding/Python/kaggle_survey/kaggle-survey00/</loc>
-        <lastmod>2021-12-06T05:20:31.303Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/05/Codding/Python/kaggle_survey/kaggle-survey03/</loc>
-        <lastmod>2021-12-06T05:20:31.269Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/02/Codding/Python/kaggle_survey/kaggle-survey01/</loc>
-        <lastmod>2021-12-06T05:20:31.247Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/04/hobby/games/altf4/</loc>
-        <lastmod>2021-12-05T15:50:48.814Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://hangack.github.io/2021/11/27/hobby/games/djmax-1st15max/</loc>
         <lastmod>2021-12-05T15:50:00.383Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -163,94 +379,6 @@
     <url>
         <loc>https://hangack.github.io/2021/12/04/hobby/games/ftl-the-shrike/</loc>
         <lastmod>2021-12-05T15:50:00.356Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/30/Blog/iframe-plotly/</loc>
-        <lastmod>2021-12-02T03:16:10.382Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/11/Codding/Python/kaggle_survey/Data-Transformation-input-num/</loc>
-        <lastmod>2021-12-02T02:45:38.750Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/28/Blog/Setting/hexo-blog-style/</loc>
-        <lastmod>2021-12-01T13:38:44.942Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/12/01/Codding/R/r-setting/</loc>
-        <lastmod>2021-11-29T23:18:28.613Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/15/Codding/MarkDown/markdown-mathjax/</loc>
-        <lastmod>2021-11-29T13:11:14.739Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/13/Blog/Setting/Hexo-blog-mathjax/</loc>
-        <lastmod>2021-11-29T13:11:01.643Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/12/Big_data/MAE-MSE-RMSE/</loc>
-        <lastmod>2021-11-28T07:21:38.725Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/09/Codding/Python/Setting/Jupyter-ModuleNotFound/</loc>
-        <lastmod>2021-11-28T07:17:11.447Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/07/Codding/Python/Setting/jupyter-change-path/</loc>
-        <lastmod>2021-11-28T07:16:51.232Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/07/Codding/Python/Setting/ipynb-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2021-11-28T07:16:51.221Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/03/Codding/Python/basic_module/Matplotlib%27s%20pyplot%20%26%20pyplot.subplots/</loc>
-        <lastmod>2021-11-28T07:10:26.023Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -385,120 +513,8 @@
     </url>
 
     <url>
-        <loc>https://hangack.github.io/2021/11/09/Codding/MarkDown/Markdown-href-img/</loc>
-        <lastmod>2021-11-28T07:07:39.408Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/17/Blog/Hexo-blog-page-about/</loc>
-        <lastmod>2021-11-28T07:05:43.141Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/16/Blog/hexo-post-private/</loc>
-        <lastmod>2021-11-28T07:05:43.131Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/19/Blog/Hexo-image/</loc>
-        <lastmod>2021-11-28T07:05:43.119Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/21/Blog/Setting/hexo-blog-category/</loc>
-        <lastmod>2021-11-28T07:04:22.463Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/10/31/Blog/Setting/Pycharm-Terminal-git/</loc>
-        <lastmod>2021-11-28T07:04:22.452Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-toc/</loc>
         <lastmod>2021-11-28T07:04:22.442Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/02/Blog/Setting/Hexo-blog-theme/</loc>
-        <lastmod>2021-11-28T07:04:22.432Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/22/Blog/Setting/hexo-blog-sidebar-sticky/</loc>
-        <lastmod>2021-11-28T07:04:22.411Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/01/Blog/Setting/Hexo-blog/</loc>
-        <lastmod>2021-11-28T07:04:22.389Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/25/Blog/Setting/hexo-blog-clone-theme/</loc>
-        <lastmod>2021-11-28T07:04:22.356Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/12/Blog/Setting/git-bash-%EC%97%B0%EB%8F%99/</loc>
-        <lastmod>2021-11-28T07:04:22.336Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/23/Blog/Setting/hexo-blog-img/</loc>
-        <lastmod>2021-11-28T07:04:22.326Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/24/Blog/Setting/hexo-blog-utterances/</loc>
-        <lastmod>2021-11-28T06:57:07.306Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2021/11/04/Big_data/Decision-Tree/</loc>
-        <lastmod>2021-11-24T16:20:00.128Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
