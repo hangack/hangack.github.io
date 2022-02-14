@@ -9,8 +9,41 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 13 Feb 2022 23:52:14 GMT</pubDate>
+    <pubDate>Mon, 14 Feb 2022 00:45:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>pyspark-설치</title>
+      <link>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</link>
+      <guid>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</guid>
+      <pubDate>Mon, 14 Feb 2022 00:11:31 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;pyspark&quot;&gt;&lt;a href=&quot;#pyspark&quot; class=&quot;headerlink&quot; title=&quot;pyspark&quot;&gt;&lt;/a&gt;pyspark&lt;/h2&gt;&lt;p&gt;대용량 data를 관리하기 위한 유사 SQL 라이브러리&lt;/p&gt;
+&lt;h3 id=&quot;사전-준비&quot;&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="pyspark"><a href="#pyspark" class="headerlink" title="pyspark"></a>pyspark</h2><p>대용량 data를 관리하기 위한 유사 SQL 라이브러리</p><h3 id="사전-준비"><a href="#사전-준비" class="headerlink" title="사전 준비"></a>사전 준비</h3><ul><li>python 설치</li><li>java 설치</li><li>spark 다운로드</li><li>winutils 다운로드</li></ul><h4 id="python-설치"><a href="#python-설치" class="headerlink" title="python 설치"></a>python 설치</h4><p>파이썬 혹은 아나콘다를 설치한다.<br>python 버전 3 이상으로 설치한다.</p><ul><li><a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li><li><a href="https://hangack.github.io/2021/11/01/Codding/Python/basic/Python0_download/">아나콘다 설치</a></li></ul><h4 id="java-설치"><a href="#java-설치" class="headerlink" title="java 설치"></a>java 설치</h4><p>나의 경우 java가 설치되어있고 <code>JAVA_HOME</code> 환경변수까지 설정되있기에 그대로 사용했으나 아니라면 오라클에 로그인하고 java를 설치한다.</p><ul><li><a href="https://www.oracle.com/java/technologies/downloads/#jdk17-windows">https://www.oracle.com/java/technologies/downloads/#jdk17-windows</a></li></ul><p>이후 <code>JAVA_HOME</code> 환경 변수를 추가해준다.</p><p><img src="/images/2202/pyspark-설치/JAVA_HOME.png" alt="JAVA_HOME"></p><p>시스템 변수, 사용자 변수 중 원하는 영역에 추가해준다.<br>난 여러 계정을 사용하지 않으니 그냥 사용자 변수에 넣어줬다.</p><h4 id="Spark-다운로드"><a href="#Spark-다운로드" class="headerlink" title="Spark 다운로드"></a>Spark 다운로드</h4><p>Spark tgz 압축파일을 다운받는다.</p><ul><li><a href="https://spark.apache.org/downloads.html">spark</a></li></ul><p><img src="/images/2202/pyspark-설치/Spark.png" alt="SPARK"></p><p>원하는 경로에 압축 풀고 위와 동일하게 환경 변수를 설정해준다.</p><p><img src="/images/2202/pyspark-설치/Spark-경로.png" alt="SPARK-경로"><br><img src="/images/2202/pyspark-설치/SPARK_HOME.png" alt="SPARK_HOME"></p><h4 id="winutils-다운로드"><a href="#winutils-다운로드" class="headerlink" title="winutils 다운로드"></a>winutils 다운로드</h4><p>위에서 받은 spark 버전과 동일 버전의 <code>winutils.exe</code>를 받아준다.</p><ul><li><a href="https://github.com/cdarlint/winutils">winutils</a></li></ul><p>winutils용 폴더를 만들고 bin 파일 아래에 넣어준다.</p><p><img src="/images/2202/pyspark-설치/winutils-경로.png" alt="winutils-경로"></p><p>hadoop 환경변수도 설정한다.</p><p><img src="/images/2202/pyspark-설치/HADOOP_HOME.png" alt="HADOOP_HOME"></p><h4 id="Path-설정"><a href="#Path-설정" class="headerlink" title="Path 설정"></a>Path 설정</h4><p>마지막으로 path 값에</p><ul><li>%JAVA_HOME%\bin</li><li>%SPARK_HOME%\bin</li><li>%HADOOP_HOME%\bin<br>을 넣어준다.</li></ul><p><img src="/images/2202/pyspark-설치/Path.png" alt="path"></p><h2 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h2><ul><li><a href="https://databricks.com/kr/glossary/pyspark">PySpark란 무엇입니까?</a></li><li><a href="https://dschloe.github.io/python/python_edu/00_settings/spark_installation_windows_10/">Spark Installation on Windows 10</a></li><li><a href="https://ahnty0122.tistory.com/22">WINDOWS에 PySpark 설치</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/pyspark/">pyspark</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/tags/pyspark/">pyspark</category>
+      
+      
+      <comments>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>unique 객체만 포함하는 set</title>
@@ -652,38 +685,6 @@
       
       
       <comments>https://hangack.github.io/2021/11/28/Blog/Setting/hexo-blog-style/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>와! 15성 첫 풀콤 [DJMAX Respect V]</title>
-      <link>https://hangack.github.io/2021/11/27/hobby/games/djmax-1st15max/</link>
-      <guid>https://hangack.github.io/2021/11/27/hobby/games/djmax-1st15max/</guid>
-      <pubDate>Sat, 27 Nov 2021 03:55:19 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://steamuserimages-a.akamaihd.net/ugc/1823390989350695326/BE09B915971364F33B690F21142BC60C856B2CCF/?imw=5000&amp;amp;imh=5000&amp;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://steamuserimages-a.akamaihd.net/ugc/1823390989350695326/BE09B915971364F33B690F21142BC60C856B2CCF/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" alt=""><br>맥콤 생각하고 준내 비볐엌ㅋ</p><p><img src="https://steamuserimages-a.akamaihd.net/ugc/1823390989350695521/7FC5B846F6A6A389121B657A6FC76756675545BB/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" alt=""></p><p>나도 이제 초고수?</p>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/">취미(뻘짓중)</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/%EA%B2%8C%EC%9E%84/">게임</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EC%B7%A8%EB%AF%B8/">취미</category>
-      
-      <category domain="https://hangack.github.io/tags/%EA%B2%8C%EC%9E%84/">게임</category>
-      
-      <category domain="https://hangack.github.io/tags/DJMAX-Respect-V/">DJMAX Respect V</category>
-      
-      
-      <comments>https://hangack.github.io/2021/11/27/hobby/games/djmax-1st15max/#disqus_thread</comments>
       
     </item>
     
