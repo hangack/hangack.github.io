@@ -10,7 +10,15 @@
 
     <url>
         <loc>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</loc>
-        <lastmod>2022-02-14T00:52:16.060Z</lastmod>
+        <lastmod>2022-02-14T02:26:31.164Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-list-set/</loc>
+        <lastmod>2022-02-14T02:26:31.128Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -19,14 +27,6 @@
     <url>
         <loc>https://hangack.github.io/2022/02/04/Codding/Python/basic_module/datetime-%EB%82%A0%EC%A7%9C%EC%99%80-%EC%8B%9C%EA%B0%84/</loc>
         <lastmod>2022-02-13T23:52:14.693Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/</loc>
-        <lastmod>2022-02-13T23:52:14.682Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

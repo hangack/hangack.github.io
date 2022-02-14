@@ -9,11 +9,11 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 14 Feb 2022 00:52:16 GMT</pubDate>
+    <pubDate>Mon, 14 Feb 2022 02:26:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>pyspark-설치</title>
+      <title>pyspark 설치</title>
       <link>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</link>
       <guid>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</guid>
       <pubDate>Mon, 14 Feb 2022 00:11:31 GMT</pubDate>
@@ -46,9 +46,9 @@
     </item>
     
     <item>
-      <title>unique 객체만 포함하는 set</title>
-      <link>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/</link>
-      <guid>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/</guid>
+      <title>unique 요소만 포함하는 set</title>
+      <link>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-list-set/</link>
+      <guid>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-list-set/</guid>
       <pubDate>Mon, 07 Feb 2022 06:45:16 GMT</pubDate>
       
         
@@ -72,7 +72,7 @@
       <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
       
       
-      <comments>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-%EA%B0%9D%EC%B2%B4%EB%A7%8C-%ED%8F%AC%ED%95%A8%ED%95%98%EB%8A%94-set/#disqus_thread</comments>
+      <comments>https://hangack.github.io/2022/02/07/Codding/Python/basic/unique-list-set/#disqus_thread</comments>
       
     </item>
     
