@@ -178,6 +178,39 @@
     </item>
     
     <item>
+      <title>g2g-crwaling00: javascript 동적페이지 크롤링</title>
+      <link>https://hangack.github.io/2022/01/17/Codding/Python/crwaling_G2G/g2g-crwaling00/</link>
+      <guid>https://hangack.github.io/2022/01/17/Codding/Python/crwaling_G2G/g2g-crwaling00/</guid>
+      <pubDate>Sun, 16 Jan 2022 23:04:22 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;현거래 사이트인 &lt;a href=&quot;https://www.g2g.com/&quot;&gt;G2G&lt;/a&gt;를 크롤링 하는데 request로 html을 가져오니 사이트 구조만 긁어오고 텍스트 내용이 들어간 태그들은 가져오지 못했다.&lt;/p&gt;
+&lt;p&gt;문제는 request의 </description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>현거래 사이트인 <a href="https://www.g2g.com/">G2G</a>를 크롤링 하는데 request로 html을 가져오니 사이트 구조만 긁어오고 텍스트 내용이 들어간 태그들은 가져오지 못했다.</p><p>문제는 request의 경우 사이트에서 바로 html 코드를 긁어오기 때문에 유저의 행동에 따라 혹은 서버에서 요청을 받고 정보를 불러오는 javascript 동적페이지에 대한 대응을 할 수 없던거였다.</p><h1 id="my-work"><a href="#my-work" class="headerlink" title="my work"></a>my work</h1><ul><li><a href="https://hangack.github.io/2022/01/16/Codding/Python/crawling/selenium-driver/">selenium 사용하기</a></li><li>github: <a href="https://github.com/hangack/project-green/tree/main/crawling-g2g">project</a></li><li><a href="https://github.com/hangack/project-green/blob/main/crawling-g2g/source/crawl_URL_boost.py">crawl_URL_boost.py</a></li></ul><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://www.g2g.com/">G2G</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crwaling-G2G/">crwaling_G2G</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/tags/selenium/">selenium</category>
+      
+      
+      <comments>https://hangack.github.io/2022/01/17/Codding/Python/crwaling_G2G/g2g-crwaling00/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>selenium 사용하기</title>
       <link>https://hangack.github.io/2022/01/16/Codding/Python/crawling/selenium-driver/</link>
       <guid>https://hangack.github.io/2022/01/16/Codding/Python/crawling/selenium-driver/</guid>
@@ -650,41 +683,6 @@
       
       
       <comments>https://hangack.github.io/2021/12/02/Codding/Python/kaggle_survey/kaggle-survey01/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Rstudio 처음 세팅하기</title>
-      <link>https://hangack.github.io/2021/12/01/Codding/R/r-setting/</link>
-      <guid>https://hangack.github.io/2021/12/01/Codding/R/r-setting/</guid>
-      <pubDate>Tue, 30 Nov 2021 21:35:30 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h1 id=&quot;Rstudio-기본-설치-프로그램&quot;&gt;&lt;a href=&quot;#Rstudio-기본-설치-프로그램&quot; class=&quot;headerlink&quot; title=&quot;Rstudio 기본 설치 프로그램&quot;&gt;&lt;/a&gt;Rstudio 기본 설치 프로그램&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h1 id="Rstudio-기본-설치-프로그램"><a href="#Rstudio-기본-설치-프로그램" class="headerlink" title="Rstudio 기본 설치 프로그램"></a>Rstudio 기본 설치 프로그램</h1><ul><li><p>Rstudio는 <a href="https://cran.r-project.org/bin/windows/base/">R 언어</a>를 사용하는 프로그램이니 R 언어팩을 설치한다.</p></li><li><p>사용할 작업 환경인 <a href="https://www.rstudio.com/products/rstudio/download/#download">Rstudio</a>도 받아주고,</p></li><li><p><a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a>를 설치하면 R의 기본적인 Package 세트와 C/C++과 같은 의존성 세팅을 불러올 수 있다.</p></li></ul><h2 id="Rstudio-기본-세팅"><a href="#Rstudio-기본-세팅" class="headerlink" title="Rstudio 기본 세팅"></a>Rstudio 기본 세팅</h2><p>나는 memo 앱을 사용할 때도 자동 줄바꿈을 사용하는 편이기에 <code>Soft-wrap</code>를 체크했다.</p><p><img src="\images\2112\R-download\soft-warp.png" alt="Soft-wrap R source files"></p><p>윈도우 환경이라면 언어 인코딩 방식을 <code>UTF-8</code>로 변경하는걸 추천한다.</p><p><img src="\images\2112\R-download\encoding.png" alt="default text encoding"></p><h2 id="R-Script"><a href="#R-Script" class="headerlink" title="R Script"></a>R Script</h2><p>R studio 상단의 files 탭에서 project 경로를 생성하거나 py 혹은 ipynb 처럼 R Script, Rmd 파일창을 열 수 있다.</p><p><img src="\images\2112\R-download\files.png" alt="new"></p><h1 id="Rtools-path-설정"><a href="#Rtools-path-설정" class="headerlink" title="Rtools path 설정"></a>Rtools path 설정</h1><p>R Script 등을 열었다면 Rtools의 경로를 지정해준다.</p><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">write(<span class="string">&#x27;PATH=&quot;$&#123;RTOOLS40_HOME&#125;\\usr\\bin;$&#123;PATH&#125;&quot;&#x27;</span>, file = <span class="string">&quot;~/.Renviron&quot;</span>, append = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure><p>R은 PL/SQL처럼 동작한다. 원하는 명령어를 작성하고 해당 열에서 <code>Ctrl+Enter</code> 해주면 된다.</p><p>이후 Path값을 다시 불러오기 위해 R을 재시작한다. 나의 경우 R restart로 해결안되서 Rstudio 자체를 재실행했다.<br>그냥 깔끔하게 Rstudio를 껏다키는걸 추천한다.</p><h1 id="패키지-불러오기"><a href="#패키지-불러오기" class="headerlink" title="패키지 불러오기"></a>패키지 불러오기</h1><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">install.packages(<span class="string">&quot;Package_Name&quot;</span>)</span><br><span class="line"><span class="comment">#혹은</span></span><br><span class="line">install.packages(<span class="string">&quot;Package_Name&quot;</span>, dependencies = <span class="literal">TRUE</span>)</span><br></pre></td></tr></table></figure><p>패키지 함수를 사용하려면 다른 프로그램 언어들처럼 file에서 package를 import 해줘야한다.</p><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">library(Package_Name)</span><br></pre></td></tr></table></figure><p>만약 콘솔에 사용하려는 패키지가 없다고 나온다면 <code>install.packages(&quot;패키지명&quot;)</code>를 해주자.</p><p>특수한 경우에 대한 오류는 <a href="https://cran.r-project.org/web/packages/available_packages_by_date.html">R 패키지 리스트</a>에서 <a href="https://cran.r-project.org/web/packages/stringi/index.html">stringi</a>처럼 시스템 기본 요구사항이 들어있는 경우다.</p><p><img src="\images\2112\R-download\stringi.png" alt="stringi"></p><p>일반적인 경우는 Rtools 설치에서 해결됐을테니 크게 신경쓸 필욘 없다.</p><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://cran.r-project.org/bin/windows/base/">R language</a></li><li><a href="https://cran.r-project.org/web/packages/available_packages_by_date.html">R 패키지 리스트</a></li><li><a href="https://www.rstudio.com/products/rstudio/download/#download">Rstudio</a></li><li><a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a></li></ul><h2 id="튜토리얼"><a href="#튜토리얼" class="headerlink" title="튜토리얼"></a>튜토리얼</h2><ul><li><a href="https://r4ds.had.co.nz/">R for data science</a>에서 기본적인 시각화(ch.03) 및 기초 문법(ch.05)을 확인할 수 있다.</li><li><a href="https://exts.ggplot2.tidyverse.org/gallery/">ggplot2 extensions - gallery</a>에서는 고-급 그래프 예제를 가져올 수 있다.</li><li><a href="https://www.rstudio.com/resources/cheatsheets/">R cheatsheets</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/R/">R</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EC%84%A4%EC%A0%95/">설정</category>
-      
-      <category domain="https://hangack.github.io/tags/R/">R</category>
-      
-      <category domain="https://hangack.github.io/tags/Rstudio/">Rstudio</category>
-      
-      <category domain="https://hangack.github.io/tags/Rtools/">Rtools</category>
-      
-      
-      <comments>https://hangack.github.io/2021/12/01/Codding/R/r-setting/#disqus_thread</comments>
       
     </item>
     
