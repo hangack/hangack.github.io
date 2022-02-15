@@ -84,13 +84,13 @@
       
         
         
-      <description>&lt;p&gt;저번 토요일(02/05) poe 리그 시작일에 맞춰 한국시간 새벽 06시마다 매일 현거래 매물 데이터를 postSQL과 GBQ에 수집중이다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/2202/g2g-poe-수집/postSQL.png&quot; alt=</description>
+      <description>&lt;p&gt;저번 토요일(02/05) poe 리그 시작일에 맞춰 한국시간 06시마다 매일 현거래 매물 데이터를 postSQL과 GBQ에 수집중이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2202/g2g-poe-수집/postSQL.png&quot; alt=&quot;po</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>저번 토요일(02/05) poe 리그 시작일에 맞춰 한국시간 새벽 06시마다 매일 현거래 매물 데이터를 postSQL과 GBQ에 수집중이다.</p><p><img src="/images/2202/g2g-poe-수집/postSQL.png" alt="postSQL"></p><p><img src="/images/2202/g2g-poe-수집/GBQ.png" alt="GBQ"></p><p>2, 3 시즌 이상 데이터가 쌓이면 반복되는 데이터로 머신 러닝을 돌려 유저가 빠지는(혹은 매물이 폭락하는) 기간을 찾을 예정이다.</p><p>그 전에 <a href="https://marketingplatform.google.com/about/data-studio/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=japac-KR-all-en-dr-bkws-all-all-trial-b-dr-1009882&amp;utm_content=text-ad-none-none-DEV_c-CRE_308452914459-ADGP_Hybrid+%7C+BKWS+-+PHR+%7C+Txt+~+Data+Analytics+~+Google+Data+Studio_Data+Studio-KWID_43700065777624269-kwd-355732973731&amp;userloc_1009863-network_g&amp;utm_term=KW_google%20datastudio&amp;gclid=Cj0KCQiAmKiQBhClARIsAKtSj-l71qfnWEwmx4uDL4V0iXKQQpyZ-o_Bbdg4ceQbT3errRfqtEhthokaAgMcEALw_wcB&amp;gclsrc=aw.ds">google data studio</a>를 이용해서 대쉬보드도 관리할 예정이다.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>저번 토요일(02/05) poe 리그 시작일에 맞춰 한국시간 06시마다 매일 현거래 매물 데이터를 postSQL과 GBQ에 수집중이다.</p><p><img src="/images/2202/g2g-poe-수집/postSQL.png" alt="postSQL"></p><p><img src="/images/2202/g2g-poe-수집/GBQ.png" alt="GBQ"></p><p>2, 3 시즌 이상 데이터가 쌓이면 반복되는 데이터로 머신 러닝을 돌려 유저가 빠지는(혹은 매물이 폭락하는) 기간을 예상할 수 있을 것이다.</p><p>그 전에 <a href="https://marketingplatform.google.com/about/data-studio/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=japac-KR-all-en-dr-bkws-all-all-trial-b-dr-1009882&amp;utm_content=text-ad-none-none-DEV_c-CRE_308452914459-ADGP_Hybrid+%7C+BKWS+-+PHR+%7C+Txt+~+Data+Analytics+~+Google+Data+Studio_Data+Studio-KWID_43700065777624269-kwd-355732973731&amp;userloc_1009863-network_g&amp;utm_term=KW_google%20datastudio&amp;gclid=Cj0KCQiAmKiQBhClARIsAKtSj-l71qfnWEwmx4uDL4V0iXKQQpyZ-o_Bbdg4ceQbT3errRfqtEhthokaAgMcEALw_wcB&amp;gclsrc=aw.ds">google data studio</a>를 이용해서 대쉬보드도 관리할 예정이다.</p>]]></content:encoded>
       
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
