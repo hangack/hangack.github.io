@@ -46,36 +46,6 @@
     </item>
     
     <item>
-      <title>GCP 엑세스키 발급받기</title>
-      <link>https://hangack.github.io/2022/02/16/Codding/GCP/BigQuery/GCP-accesskey/</link>
-      <guid>https://hangack.github.io/2022/02/16/Codding/GCP/BigQuery/GCP-accesskey/</guid>
-      <pubDate>Wed, 16 Feb 2022 07:38:47 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h1 id=&quot;Google-Cloud-Platform&quot;&gt;&lt;a href=&quot;#Google-Cloud-Platform&quot; class=&quot;headerlink&quot; title=&quot;Google Cloud Platform&quot;&gt;&lt;/a&gt;Google Cloud Platform&lt;/</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h1 id="Google-Cloud-Platform"><a href="#Google-Cloud-Platform" class="headerlink" title="Google Cloud Platform"></a>Google Cloud Platform</h1><p>Python 코드에서 Bigquery로 data를 보내기 위해 <a href="https://cloud.google.com/?authuser=1">GCP</a> 엑세스 키가 필요해졌다.</p><p>google cloud 콘솔에 접속하자.</p><h2 id="Service-Account-생성"><a href="#Service-Account-생성" class="headerlink" title="Service Account 생성"></a>Service Account 생성</h2><p>콘솔에서 엑세스 키를 발급받을 프로젝트를 선택하자.</p><ul><li>다음으로 [탐색 메뉴] - [IAM 및 관리자] - [서비스 계정]에 접속한다.</li><li>[+ 서비스 계정 만들기]를 클릭해서 서비스 계정을 만들고 프로젝트 엑세스 권한을 설정하면된다.</li></ul><p><img src="/images/2202/pyspark-설치/JAVA_HOME.png" alt="JAVA_HOME"><br><img src="/images/2202/GCP-key/권한.png" alt="계정 생성"></p><h2 id="Service-Account-Key-발급받기"><a href="#Service-Account-Key-발급받기" class="headerlink" title="Service Account Key 발급받기"></a>Service Account Key 발급받기</h2><ul><li>생성된 계정의 [작업] - [키 관리]로 이동한다.</li><li>[키 추가] - [새 키 만들기] - [JSON]으로 발급받아서 사용하면 된다.</li></ul><h2 id="python-GCP-연동하기"><a href="#python-GCP-연동하기" class="headerlink" title="python GCP 연동하기"></a>python GCP 연동하기</h2><ul><li><a href="https://hangack.github.io/2022/02/16/Codding/Python/SQL/pandas_gbq-python-google-bigquery/">pandas_gbq python과 google bigquery 연동하기</a></li></ul><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://wooiljeong.github.io/python/python-bigquery/">Python BigQuery 연동하기</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/Google-Cloud/">Google Cloud</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/Google-Cloud/bigquery/">bigquery</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/GCP/">GCP</category>
-      
-      
-      <comments>https://hangack.github.io/2022/02/16/Codding/GCP/BigQuery/GCP-accesskey/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>pyspark 설치</title>
       <link>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</link>
       <guid>https://hangack.github.io/2022/02/14/Codding/Python/pyspark/pyspark-%EC%84%A4%EC%B9%98/</guid>
@@ -233,6 +203,36 @@
       
       
       <comments>https://hangack.github.io/2022/02/02/Codding/Python/basic_module/time-%EB%AA%A8%EB%93%88%EB%A1%9C-%EC%9D%BC%EC%8B%9C%EC%A0%95%EC%A7%80/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>GCP 엑세스키 발급받기</title>
+      <link>https://hangack.github.io/2022/01/26/Codding/GCP/BigQuery/GCP-accesskey/</link>
+      <guid>https://hangack.github.io/2022/01/26/Codding/GCP/BigQuery/GCP-accesskey/</guid>
+      <pubDate>Wed, 26 Jan 2022 07:38:47 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;Google-Cloud-Platform&quot;&gt;&lt;a href=&quot;#Google-Cloud-Platform&quot; class=&quot;headerlink&quot; title=&quot;Google Cloud Platform&quot;&gt;&lt;/a&gt;Google Cloud Platform&lt;/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="Google-Cloud-Platform"><a href="#Google-Cloud-Platform" class="headerlink" title="Google Cloud Platform"></a>Google Cloud Platform</h1><p>Python 코드에서 Bigquery로 data를 보내기 위해 <a href="https://cloud.google.com/?authuser=1">GCP</a> 엑세스 키가 필요해졌다.</p><p>google cloud 콘솔에 접속하자.</p><h2 id="Service-Account-생성"><a href="#Service-Account-생성" class="headerlink" title="Service Account 생성"></a>Service Account 생성</h2><p>콘솔에서 엑세스 키를 발급받을 프로젝트를 선택하자.</p><ul><li>다음으로 [탐색 메뉴] - [IAM 및 관리자] - [서비스 계정]에 접속한다.</li><li>[+ 서비스 계정 만들기]를 클릭해서 서비스 계정을 만들고 프로젝트 엑세스 권한을 설정하면된다.</li></ul><p><img src="/images/2202/pyspark-설치/JAVA_HOME.png" alt="JAVA_HOME"><br><img src="/images/2202/GCP-key/권한.png" alt="계정 생성"></p><h2 id="Service-Account-Key-발급받기"><a href="#Service-Account-Key-발급받기" class="headerlink" title="Service Account Key 발급받기"></a>Service Account Key 발급받기</h2><ul><li>생성된 계정의 [작업] - [키 관리]로 이동한다.</li><li>[키 추가] - [새 키 만들기] - [JSON]으로 발급받아서 사용하면 된다.</li></ul><h2 id="python-GCP-연동하기"><a href="#python-GCP-연동하기" class="headerlink" title="python GCP 연동하기"></a>python GCP 연동하기</h2><ul><li><a href="https://hangack.github.io/2022/02/16/Codding/Python/SQL/pandas_gbq-python-google-bigquery/">pandas_gbq python과 google bigquery 연동하기</a></li></ul><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://wooiljeong.github.io/python/python-bigquery/">Python BigQuery 연동하기</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/Google-Cloud/">Google Cloud</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/Google-Cloud/bigquery/">bigquery</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/GCP/">GCP</category>
+      
+      
+      <comments>https://hangack.github.io/2022/01/26/Codding/GCP/BigQuery/GCP-accesskey/#disqus_thread</comments>
       
     </item>
     
