@@ -311,13 +311,12 @@
       
         
         
-      <description>&lt;p&gt;현거래 매물을 크롤링할 예정이다.&lt;br&gt;전 세계를 대상으로하는 게임의 거래 데이터를 수집할 예정이니 세계 규모의 사이트 중 유명한 현거래 사이트인 &lt;a href=&quot;https://www.g2g.com/&quot;&gt;G2G&lt;/a&gt;를 크롤링할 예정이다.&lt;/p&gt;
-</description>
+      <description>&lt;p&gt;현거래 매물 거래 현황을 수집하려 한다.&lt;br&gt;전 세계를 대상으로하는 게임의 거래 데이터를 수집할 예정이니 세계 규모의 사이트 중 유명한 현거래 사이트인 &lt;a href=&quot;https://www.g2g.com/&quot;&gt;G2G&lt;/a&gt;를 크롤링할 예정이다.&lt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>현거래 매물을 크롤링할 예정이다.<br>전 세계를 대상으로하는 게임의 거래 데이터를 수집할 예정이니 세계 규모의 사이트 중 유명한 현거래 사이트인 <a href="https://www.g2g.com/">G2G</a>를 크롤링할 예정이다.</p><p>G2G를 크롤링 하는데 request로 html을 가져오니 사이트 구조만 긁어오고 텍스트 내용이 들어간 태그들은 가져오지 못했다.</p><p>문제는 request의 경우 사이트에서 바로 html 코드를 긁어오기 때문에 유저의 행동에 따라 혹은 서버에서 요청을 받고 정보를 불러오는 javascript 동적페이지에 대한 대응을 할 수 없던거였다.</p><h1 id="my-work"><a href="#my-work" class="headerlink" title="my work"></a>my work</h1><ul><li><a href="https://hangack.github.io/2022/01/16/Codding/Python/crawling/selenium-driver/">selenium 사용하기</a></li><li>github: <a href="https://github.com/hangack/project-green/tree/main/crawling-g2g">project</a></li><li><a href="https://github.com/hangack/project-green/blob/main/crawling-g2g/source/crawl_URL_boost.py">crawl_URL_boost.py</a></li></ul><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://www.g2g.com/">G2G</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>현거래 매물 거래 현황을 수집하려 한다.<br>전 세계를 대상으로하는 게임의 거래 데이터를 수집할 예정이니 세계 규모의 사이트 중 유명한 현거래 사이트인 <a href="https://www.g2g.com/">G2G</a>를 크롤링할 예정이다.</p><p>G2G를 크롤링 하는데 request로 html을 가져오니 사이트 구조만 긁어오고 텍스트 내용이 들어간 태그들은 가져오지 못했다.</p><p>문제는 request의 경우 사이트에서 바로 html 코드를 긁어오기 때문에 유저의 행동에 따라 혹은 서버에서 요청을 받고 정보를 불러오는 javascript 동적페이지에 대한 대응을 할 수 없던거였다.</p><h1 id="my-work"><a href="#my-work" class="headerlink" title="my work"></a>my work</h1><ul><li><a href="https://hangack.github.io/2022/01/16/Codding/Python/crawling/selenium-driver/">selenium 사용하기</a></li><li>github: <a href="https://github.com/hangack/project-green/tree/main/crawling-g2g">project</a></li><li><a href="https://github.com/hangack/project-green/blob/main/crawling-g2g/source/crawl_URL_boost.py">crawl_URL_boost.py</a></li></ul><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://www.g2g.com/">G2G</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
