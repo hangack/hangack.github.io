@@ -9,8 +9,71 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 14 Feb 2022 08:08:46 GMT</pubDate>
+    <pubDate>Wed, 16 Feb 2022 12:21:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>pandas_gbq python과 google bigquery 연동하기</title>
+      <link>https://hangack.github.io/2022/02/16/Codding/Python/SQL/pandas_gbq-python-google-bigquery/</link>
+      <guid>https://hangack.github.io/2022/02/16/Codding/Python/SQL/pandas_gbq-python-google-bigquery/</guid>
+      <pubDate>Wed, 16 Feb 2022 09:49:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;a href=&quot;&quot;&gt;GCP 엑세스키 발급받기&lt;/a&gt;를 선행&lt;/p&gt;
+&lt;h1 id=&quot;라이브러리-설치&quot;&gt;&lt;a href=&quot;#라이브러리-설치&quot; class=&quot;headerlink&quot; title=&quot;라이브러리 설치&quot;&gt;&lt;/a&gt;라이브러리 설치&lt;/h1&gt;&lt;h2 id=&quot;g</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><a href="">GCP 엑세스키 발급받기</a>를 선행</p><h1 id="라이브러리-설치"><a href="#라이브러리-설치" class="headerlink" title="라이브러리 설치"></a>라이브러리 설치</h1><h2 id="google-cloud-bigquery"><a href="#google-cloud-bigquery" class="headerlink" title="google-cloud-bigquery"></a>google-cloud-bigquery</h2><p>python과 google bigquery를 연동하기 위한 라이브러리</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pip install google-cloud-bigquery</span></span><br></pre></td></tr></table></figure><h2 id="pandas-gbq"><a href="#pandas-gbq" class="headerlink" title="pandas-gbq"></a>pandas-gbq</h2><p>dataframe을 gbq에 업로드하기 위한 라이브러리</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pip install pandas-gbq</span></span><br></pre></td></tr></table></figure><h1 id="GBQ-연동"><a href="#GBQ-연동" class="headerlink" title="GBQ 연동"></a>GBQ 연동</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> google.oauth2 <span class="keyword">import</span> service_account</span><br><span class="line"></span><br><span class="line"><span class="comment">## json 파일 내용</span></span><br><span class="line">credentials = service_account.Credentials.from_service_account_info(</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;type&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;project_id&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;private_key_id&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;private_key&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;client_email&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;client_id&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;auth_uri&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;token_uri&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;auth_provider_x509_cert_url&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;client_x509_cert_url&quot;</span>: <span class="string">&quot;&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">## json 파일 경로를 사용하고 싶으면 `from_service_account_file` 함수를 사용하면된다</span></span><br><span class="line">credentials = service_account.Credentials.from_service_account_file(<span class="string">&quot;URL.json&quot;</span>)</span><br></pre></td></tr></table></figure><p>업로드 하고싶은 dataframe(<code>df</code>)을 만들어두자.</p><p><code>pandas.to_gbq</code>로 연동하면 브라우저 창을 통해 쿠키를 받아야하므로 <code>pandas_gbq</code>를 사용한다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas_gbq</span><br><span class="line"></span><br><span class="line">project_id = <span class="string">&quot;project_id&quot;</span></span><br><span class="line">table_name = <span class="string">&quot;data_set_name.table_name&quot;</span></span><br><span class="line"></span><br><span class="line">pandas_gbq.context.credentials = credentials</span><br><span class="line">pandas_gbq.context.project = project_id</span><br></pre></td></tr></table></figure><h2 id="dataframe-업로드"><a href="#dataframe-업로드" class="headerlink" title="dataframe 업로드"></a>dataframe 업로드</h2><p><code>if_exists</code> 요소의 기본값 = “fail”</p><ul><li>fail: 테이블이 존재하면 <code>pandas_gbq.gbq.TableCreationError</code> 발생</li><li>replace: 테이블이 있는 경우 다시 만들고 데이터 삽입</li><li>append: 테이블에 데이터 삽입(테이블이 없는 경우 테이블 생성)</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandas_gbq.to_gbq(df, table_name, project_id=project_id, if_exists=<span class="string">&quot;append&quot;</span>)</span><br></pre></td></tr></table></figure><h2 id="bigquery-data-받아오기"><a href="#bigquery-data-받아오기" class="headerlink" title="bigquery data 받아오기"></a>bigquery data 받아오기</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">query = <span class="string">&quot;SELECT * FROM `data_set_name.table_name`&quot;</span></span><br><span class="line">readdf = pd.read_gbq(query=query, project_id=project_id, credentials=credentials, dialect=<span class="string">&#x27;standard&#x27;</span>)</span><br></pre></td></tr></table></figure><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_gbq.html">pandas.to_gbq</a></li><li><a href="https://pandas.pydata.org/docs/reference/api/pandas.read_gbq.html">pandas.read_gbq</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/SQL/">SQL</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
+      
+      <category domain="https://hangack.github.io/tags/GBQ/">GBQ</category>
+      
+      
+      <comments>https://hangack.github.io/2022/02/16/Codding/Python/SQL/pandas_gbq-python-google-bigquery/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>GCP 엑세스키 발급받기</title>
+      <link>https://hangack.github.io/2022/02/16/Codding/GCP/BigQuery/GCP-%EC%97%91%EC%84%B8%EC%8A%A4%ED%82%A4-%EB%B0%9C%EA%B8%89%EB%B0%9B%EA%B8%B0/</link>
+      <guid>https://hangack.github.io/2022/02/16/Codding/GCP/BigQuery/GCP-%EC%97%91%EC%84%B8%EC%8A%A4%ED%82%A4-%EB%B0%9C%EA%B8%89%EB%B0%9B%EA%B8%B0/</guid>
+      <pubDate>Wed, 16 Feb 2022 07:38:47 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;Google-Cloud-Platform&quot;&gt;&lt;a href=&quot;#Google-Cloud-Platform&quot; class=&quot;headerlink&quot; title=&quot;Google Cloud Platform&quot;&gt;&lt;/a&gt;Google Cloud Platform&lt;/</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="Google-Cloud-Platform"><a href="#Google-Cloud-Platform" class="headerlink" title="Google Cloud Platform"></a>Google Cloud Platform</h1><p>Python 코드에서 Bigquery로 data를 보내기 위해 <a href="https://cloud.google.com/?authuser=1">GCP</a> 엑세스 키가 필요해졌다.</p><p>google cloud 콘솔에 접속하자.</p><h2 id="Service-Account-생성"><a href="#Service-Account-생성" class="headerlink" title="Service Account 생성"></a>Service Account 생성</h2><p>콘솔에서 엑세스 키를 발급받을 프로젝트를 선택하자.</p><ul><li>다음으로 [탐색 메뉴] - [IAM 및 관리자] - [서비스 계정]에 접속한다.</li><li>[+ 서비스 계정 만들기]를 클릭해서 서비스 계정을 만들고 프로젝트 엑세스 권한을 설정하면된다.</li></ul><p><img src="/images/2202/GCP-key/권한.png" alt="계정 생성"></p><h2 id="Service-Account-Key-발급받기"><a href="#Service-Account-Key-발급받기" class="headerlink" title="Service Account Key 발급받기"></a>Service Account Key 발급받기</h2><ul><li>생성된 계정의 [작업] - [키 관리]로 이동한다.</li><li>[키 추가] - [새 키 만들기] - [JSON]으로 발급받아서 사용하면 된다.</li></ul><h2 id="python-GCP-연동하기"><a href="#python-GCP-연동하기" class="headerlink" title="python GCP 연동하기"></a>python GCP 연동하기</h2><ul><li><a href="">pandas_gbq</a></li></ul><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://wooiljeong.github.io/python/python-bigquery/">Python BigQuery 연동하기</a></li></ul>]]></content:encoded>
+      
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/Google-Cloud/">Google Cloud</category>
+      
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/Google-Cloud/bigquery/">bigquery</category>
+      
+      
+      <category domain="https://hangack.github.io/tags/GCP/">GCP</category>
+      
+      
+      <comments>https://hangack.github.io/2022/02/16/Codding/GCP/BigQuery/GCP-%EC%97%91%EC%84%B8%EC%8A%A4%ED%82%A4-%EB%B0%9C%EA%B8%89%EB%B0%9B%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>pyspark 설치</title>
@@ -610,74 +673,6 @@
       
       
       <comments>https://hangack.github.io/2021/12/04/hobby/games/djmax-alone/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ㅇㄱㅇㅅㅎㄷㅂㅎㅇ [ALTF4]</title>
-      <link>https://hangack.github.io/2021/12/04/hobby/games/altf4/</link>
-      <guid>https://hangack.github.io/2021/12/04/hobby/games/altf4/</guid>
-      <pubDate>Fri, 03 Dec 2021 17:33:21 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;&lt;img src=&quot;https://steamuserimages-a.akamaihd.net/ugc/1823391714098113676/B619D57ACE99AC554731A7522FF4BA3AA9C6DAF8/?imw=5000&amp;amp;imh=5000&amp;</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p><img src="https://steamuserimages-a.akamaihd.net/ugc/1823391714098113676/B619D57ACE99AC554731A7522FF4BA3AA9C6DAF8/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false" alt=""></p><p>메모리 누수 등으로 프레임 드랍 일어나면 유저, 닭 투척, 트레일 등 엔티티 속도도 같이 느려져서 자체 하드모드 쌉가능.</p><p>리부트하면 설치물도 전부 사라짐. 메모리에 할당됐던걸까?</p>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/">취미(뻘짓중)</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%B7%A8%EB%AF%B8-%EB%BB%98%EC%A7%93%EC%A4%91/%EA%B2%8C%EC%9E%84/">게임</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/%EC%B7%A8%EB%AF%B8/">취미</category>
-      
-      <category domain="https://hangack.github.io/tags/%EA%B2%8C%EC%9E%84/">게임</category>
-      
-      <category domain="https://hangack.github.io/tags/%EC%9D%B8%EB%94%94%EA%B2%8C%EC%9E%84/">인디게임</category>
-      
-      
-      <comments>https://hangack.github.io/2021/12/04/hobby/games/altf4/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Kaggle_Survey02: Bar 시각화 [plotly]</title>
-      <link>https://hangack.github.io/2021/12/03/Codding/Python/kaggle_survey/kaggle-survey02/</link>
-      <guid>https://hangack.github.io/2021/12/03/Codding/Python/kaggle_survey/kaggle-survey02/</guid>
-      <pubDate>Thu, 02 Dec 2021 15:19:33 GMT</pubDate>
-      
-        
-        
-      <description>&lt;h1 id=&quot;이전-포스팅들과-동일-과정&quot;&gt;&lt;a href=&quot;#이전-포스팅들과-동일-과정&quot; class=&quot;headerlink&quot; title=&quot;이전 포스팅들과 동일 과정&quot;&gt;&lt;/a&gt;이전 포스팅들과 동일 과정&lt;/h1&gt;&lt;figure class=&quot;highlight </description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<h1 id="이전-포스팅들과-동일-과정"><a href="#이전-포스팅들과-동일-과정" class="headerlink" title="이전 포스팅들과 동일 과정"></a>이전 포스팅들과 동일 과정</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> plotly.graph_objects <span class="keyword">as</span> go </span><br><span class="line"></span><br><span class="line">colors = [<span class="string">&#x27;#FF0000&#x27;</span>,<span class="string">&#x27;#FFBB00&#x27;</span>,<span class="string">&#x27;#ffff00&#x27;</span>,<span class="string">&#x27;#00FF00&#x27;</span>,<span class="string">&#x27;#0000FF&#x27;</span>,<span class="string">&#x27;#9C009C&#x27;</span>]</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df = pd.read_csv(<span class="string">&quot;https://raw.githubusercontent.com/hangack/project-green/main/Kaggle_Survey-2021/data/kaggle-survey-2021/kaggle_survey_2021_responses.csv&quot;</span>, dtype=<span class="string">&#x27;unicode&#x27;</span>)</span><br><span class="line"><span class="comment">#df = pd.read_csv(&quot;../input/kaggle-survey-2021/kaggle_survey_2021_responses.csv&quot;)</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df_ChJp = df[df.Q3.isin([<span class="string">&quot;Japan&quot;</span>,<span class="string">&quot;China&quot;</span>])]</span><br><span class="line"></span><br><span class="line">df_Ch = df_ChJp[df_ChJp.Q3.isin([<span class="string">&quot;China&quot;</span>])]</span><br><span class="line">df_Jp = df_ChJp[df_ChJp.Q3.isin([<span class="string">&quot;Japan&quot;</span>])]</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">indiQ_value_counts</span>(<span class="params">dataframe, indi_Qnum</span>):</span></span><br><span class="line">    df = dataframe[indi_Qnum][<span class="number">1</span>:].value_counts()</span><br><span class="line">    <span class="keyword">return</span> df</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_Jp_age = indiQ_value_counts(df_Jp, <span class="string">&#x27;Q1&#x27;</span>)</span><br><span class="line">df_Ch_age = indiQ_value_counts(df_Ch, <span class="string">&#x27;Q1&#x27;</span>)</span><br></pre></td></tr></table></figure><h1 id="Age-plotly-Bar"><a href="#Age-plotly-Bar" class="headerlink" title="Age [plotly: Bar]"></a>Age [plotly: Bar]</h1><p>01에 이어 이번에도 두 나라의 값을 비교할 예정이니 아예 처음부터 데이터를 합쳐서 표현한 그래프를 뽑아내겠다.</p><ul><li><a href="https://plotly.com/python-api-reference/generated/plotly.graph_objects.Bar.html">plotly.graph_objects.Bar</a></li><li><a href="https://plotly.com/python/bar-charts/">Bar Charts in Python</a></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Bar_C = go.Bar(name=<span class="string">&#x27;China&#x27;</span>,</span><br><span class="line">               x=df_Ch_age.index,</span><br><span class="line">               y=df_Ch_age.values</span><br><span class="line">              )</span><br><span class="line">Bar_J = go.Bar(name=<span class="string">&#x27;Japan&#x27;</span>,</span><br><span class="line">               x=df_Jp_age.index,</span><br><span class="line">               y=df_Jp_age.values</span><br><span class="line">              )</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fig = go.Figure(data=[Bar_C,</span><br><span class="line">                      Bar_J])</span><br><span class="line"></span><br><span class="line">fig.update_layout(title=<span class="string">&#x27;Age: Japan &amp; China&#x27;</span>,</span><br><span class="line">                  xaxis_title=<span class="string">&quot;Age&quot;</span>, yaxis_title=<span class="string">&#x27;Counts&#x27;</span></span><br><span class="line">                 )</span><br><span class="line"></span><br><span class="line">fig.show()</span><br></pre></td></tr></table></figure><p><img src="\images\2112\kaggle-survey02\bar1.png" alt="Bar1"></p><p>bar chart에서 stack 형식을 사용하거나 group과 stack을 동시에 사용하지 않는 이상 하나의 plot에 여러 bar data를 넣으면 default는 group 형식으로 뽑힌다.</p><h2 id="index-정렬"><a href="#index-정렬" class="headerlink" title="index 정렬"></a>index 정렬</h2><p>나이 순으로 출력하고 싶었지만, <code>value_counts</code> 할 때 원본 dataframe의 요소 순서로 index가 들어가버렸다.</p><p>그래서 <code>value_counts</code>된 dataframe을 <code>sort_index</code>를 사용해 오름차순 정렬한다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_Ch_sortAge = df_Ch_age.sort_index()</span><br><span class="line">df_Jp_sortAge = df_Jp_age.sort_index()</span><br></pre></td></tr></table></figure><p><img src="\images\2112\kaggle-survey02\bar2.png" alt="Bar2"></p><h2 id="60-69-구간에-더미값-추가"><a href="#60-69-구간에-더미값-추가" class="headerlink" title="60-69 구간에 더미값 추가"></a>60-69 구간에 더미값 추가</h2><p>정렬은 문제없어 보였지만 70+와 60-69 순서가 이상하다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df_Ch_sortAge</span><br></pre></td></tr></table></figure><pre><code>18-21    20622-24    27425-29    15930-34    10935-39     3940-44     1445-49      850-54      155-59      270+        1Name: Q1, dtype: int64</code></pre><p>아무래도 China에 60-69 구간에 해당하는 value가 없어서 index 추가가 안된거같다.</p><p>index가 전부 있는 Japan을 앞 순서로 바꿔도 되겠지만, 그냥 China <code>60-69</code> index를 추가하고 임의로 값 <code>0</code>를 넣겠다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df_Ch_sortAge.loc[<span class="string">&#x27;60-69&#x27;</span>] = <span class="number">0</span></span><br><span class="line">df_Ch_sortAge = df_Ch_sortAge.sort_index()</span><br></pre></td></tr></table></figure><p><img src="\images\2112\kaggle-survey02\bar3.png" alt="Bar3"></p><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://plotly.com/python-api-reference/generated/plotly.graph_objects.Bar.html">plotly.graph_objects.Bar</a></li><li><a href="https://plotly.com/python/bar-charts/">Bar Charts in Python</a></li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
-      
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/Kaggle-Survey-2021/">Kaggle_Survey 2021</category>
-      
-      
-      <category domain="https://hangack.github.io/tags/plotly/">plotly</category>
-      
-      <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
-      
-      <category domain="https://hangack.github.io/tags/code/">code</category>
-      
-      <category domain="https://hangack.github.io/tags/pandas/">pandas</category>
-      
-      
-      <comments>https://hangack.github.io/2021/12/03/Codding/Python/kaggle_survey/kaggle-survey02/#disqus_thread</comments>
       
     </item>
     
