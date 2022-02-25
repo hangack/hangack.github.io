@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://hangack.github.io/2022/02/24/Codding/Python/crwaling_G2G/g2g-crwaling04/</loc>
+        <lastmod>2022-02-25T09:09:53.988Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hangack.github.io/2022/02/07/Codding/Python/crwaling_G2G/g2g-crwaling03/</loc>
+        <lastmod>2022-02-25T09:07:07.025Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://hangack.github.io/2022/02/22/hobby/games/steam_next-fest_feb-2022/</loc>
         <lastmod>2022-02-23T05:49:53.482Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -91,14 +107,6 @@
     <url>
         <loc>https://hangack.github.io/2022/02/16/Codding/Python/SQL/pandas_gbq-python-google-bigquery/</loc>
         <lastmod>2022-02-16T12:32:50.460Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2022/02/07/Codding/Python/crwaling_G2G/G2G-poe-start-crwaling/</loc>
-        <lastmod>2022-02-16T12:30:12.573Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
