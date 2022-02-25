@@ -9,7 +9,7 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 25 Feb 2022 09:09:53 GMT</pubDate>
+    <pubDate>Fri, 25 Feb 2022 09:11:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -21,12 +21,12 @@
         
         
       <description>&lt;p&gt;동적 페이지 자동 크롤링을 새벽마다 돌리면서 URL이 변경되지 않는 동작의 경우 요소를 찾을 때 까지 대기하는 코드가 때때로 에러를 일으킨다.&lt;/p&gt;
-&lt;p&gt;다음에 error가 식별됐을 때 Error 명을 식별해서 &lt;code&gt;Try&lt;/code&gt; -</description>
+&lt;p&gt;다음에 error가 식별됐을 때 Error 명을 식별해서 &lt;code&gt;try&lt;/code&gt; -</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>동적 페이지 자동 크롤링을 새벽마다 돌리면서 URL이 변경되지 않는 동작의 경우 요소를 찾을 때 까지 대기하는 코드가 때때로 에러를 일으킨다.</p><p>다음에 error가 식별됐을 때 Error 명을 식별해서 <code>Try</code> - <code>Except</code> 구문으로 예외처리하고 <code>Time.sleep</code> 함수를 넣어준 다음 Try 재귀 함수를 돌리는 코드를 추가 작성해 업데이트할 예정이다.</p><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://dojang.io/mod/page/view.php?id=2352">python 재귀호출</a></li><li><a href="https://dojang.io/mod/page/view.php?id=2398">python 예외처리</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>동적 페이지 자동 크롤링을 새벽마다 돌리면서 URL이 변경되지 않는 동작의 경우 요소를 찾을 때 까지 대기하는 코드가 때때로 에러를 일으킨다.</p><p>다음에 error가 식별됐을 때 Error 명을 식별해서 <code>try</code> - <code>except</code> 구문으로 예외처리하고 <code>time.sleep</code> 함수를 넣어준 다음 try 재귀 함수를 돌리는 코드를 추가 작성해 업데이트할 예정이다.</p><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://dojang.io/mod/page/view.php?id=2352">python 재귀호출</a></li><li><a href="https://dojang.io/mod/page/view.php?id=2398">python 예외처리</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
