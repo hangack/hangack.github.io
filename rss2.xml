@@ -9,7 +9,7 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 28 Feb 2022 07:22:55 GMT</pubDate>
+    <pubDate>Mon, 28 Feb 2022 07:29:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -26,7 +26,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>동적 페이지 자동 크롤링을 새벽마다 돌리면서 URL이 변경되지 않는 동작의 경우 요소를 찾을 때 까지 대기하는 코드가 때때로 에러를 일으킨다.</p><p>다음에 error가 식별됐을 때 Error 명을 식별해서 <code>try</code> - <code>except</code> 구문으로 예외처리하고 <code>time.sleep</code> 함수를 넣어준 다음 try 재귀 함수를 돌리는 코드를 추가 작성해 업데이트할 예정이다.</p><h2 id="try-함수-추가-20220226"><a href="#try-함수-추가-20220226" class="headerlink" title="try 함수 추가(20220226)"></a>try 함수 추가(20220226)</h2><p><code>get_data()</code> 함수에 <code>try</code> - <code>except</code> - <code>finally</code>로 구성된 재귀함수 <code>try_clickable()</code>을 추가했다.</p><p>클릭 동작이 들어간 <code>list.extend</code> 부분만 업데이트 했지만, 만약 클릭 동작이 필요없는 페이지에서도 <code>IndexError</code>가 발생한다면 앞부분에도 추가해야한다.</p><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://dojang.io/mod/page/view.php?id=2352">python 재귀호출</a></li><li><a href="https://dojang.io/mod/page/view.php?id=2398">python 예외처리</a></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<p>동적 페이지 자동 크롤링을 새벽마다 돌리면서 URL이 변경되지 않는 동작의 경우 요소를 찾을 때 까지 대기하는 코드가 때때로 에러를 일으킨다.</p><p>다음에 error가 식별됐을 때 Error 명을 식별해서 <code>try</code> - <code>except</code> 구문으로 예외처리하고 <code>time.sleep</code> 함수를 넣어준 다음 try 재귀 함수를 돌리는 코드를 추가 작성해 업데이트할 예정이다.</p><h2 id="try-amp-재귀함수-추가-20220226"><a href="#try-amp-재귀함수-추가-20220226" class="headerlink" title="try &amp; 재귀함수 추가(20220226)"></a>try &amp; 재귀함수 추가(20220226)</h2><p><code>get_data()</code> 함수에 <code>try</code> - <code>except</code> - <code>finally</code>로 구성된 재귀함수 <code>try_clickable()</code>을 추가했다.</p><p>클릭 동작이 들어간 <code>list.extend</code> 부분만 업데이트 했지만, 만약 클릭 동작이 필요없는 페이지에서도 <code>IndexError</code>가 발생한다면 앞부분에도 추가해야한다.</p><h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><ul><li><a href="https://dojang.io/mod/page/view.php?id=2352">python 재귀호출</a></li><li><a href="https://dojang.io/mod/page/view.php?id=2398">python 예외처리</a></li></ul>]]></content:encoded>
       
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
