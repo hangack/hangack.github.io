@@ -9,8 +9,16 @@
 
 
     <url>
+        <loc>https://hangack.github.io/2022/01/27/Codding/GCP/BigQuery/GCP-accesskey/</loc>
+        <lastmod>2022-03-03T08:41:53.237Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://hangack.github.io/2022/03/03/Codding/Python/crwaling_G2G/g2g-crwaling05/</loc>
-        <lastmod>2022-03-03T08:39:28.723Z</lastmod>
+        <lastmod>2022-03-03T08:40:55.871Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -99,14 +107,6 @@
     <url>
         <loc>https://hangack.github.io/2022/01/23/Codding/Python/crwaling_G2G/g2g-crwaling01/</loc>
         <lastmod>2022-02-16T19:59:38.233Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2022/01/27/Codding/GCP/BigQuery/GCP-accesskey/</loc>
-        <lastmod>2022-02-16T12:37:00.304Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
