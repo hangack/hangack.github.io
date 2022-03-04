@@ -9,13 +9,13 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 04 Mar 2022 01:07:16 GMT</pubDate>
+    <pubDate>Fri, 04 Mar 2022 01:19:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>g2g-crwaling06: div.noresult-main-title</title>
-      <link>https://hangack.github.io/2022/03/04/Codding/Python/crwaling_G2G/g2g-crwaling06/</link>
-      <guid>https://hangack.github.io/2022/03/04/Codding/Python/crwaling_G2G/g2g-crwaling06/</guid>
+      <title>g2g-crawling06: div.noresult-main-title</title>
+      <link>https://hangack.github.io/2022/03/04/Codding/Python/crawling_G2G/g2g-crawling06/</link>
+      <guid>https://hangack.github.io/2022/03/04/Codding/Python/crawling_G2G/g2g-crawling06/</guid>
       <pubDate>Fri, 04 Mar 2022 00:54:30 GMT</pubDate>
       
         
@@ -32,7 +32,7 @@
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
       
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crwaling-G2G/">crwaling_G2G</category>
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crawling-G2G/">crawling_G2G</category>
       
       
       <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
@@ -40,14 +40,14 @@
       <category domain="https://hangack.github.io/tags/%ED%81%AC%EB%A1%A4%EB%A7%81/">크롤링</category>
       
       
-      <comments>https://hangack.github.io/2022/03/04/Codding/Python/crwaling_G2G/g2g-crwaling06/#disqus_thread</comments>
+      <comments>https://hangack.github.io/2022/03/04/Codding/Python/crawling_G2G/g2g-crawling06/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>g2g-crwaling05: 엑세스 키 관리 문제</title>
-      <link>https://hangack.github.io/2022/03/03/Codding/Python/crwaling_G2G/g2g-crwaling05/</link>
-      <guid>https://hangack.github.io/2022/03/03/Codding/Python/crwaling_G2G/g2g-crwaling05/</guid>
+      <title>g2g-crawling05: 엑세스 키 관리 문제</title>
+      <link>https://hangack.github.io/2022/03/03/Codding/Python/crawling_G2G/g2g-crawling05/</link>
+      <guid>https://hangack.github.io/2022/03/03/Codding/Python/crawling_G2G/g2g-crawling05/</guid>
       <pubDate>Thu, 03 Mar 2022 08:22:24 GMT</pubDate>
       
         
@@ -65,7 +65,7 @@
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
       
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crwaling-G2G/">crwaling_G2G</category>
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crawling-G2G/">crawling_G2G</category>
       
       
       <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
@@ -73,14 +73,14 @@
       <category domain="https://hangack.github.io/tags/GCP/">GCP</category>
       
       
-      <comments>https://hangack.github.io/2022/03/03/Codding/Python/crwaling_G2G/g2g-crwaling05/#disqus_thread</comments>
+      <comments>https://hangack.github.io/2022/03/03/Codding/Python/crawling_G2G/g2g-crawling05/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>g2g-crwaling04: 동적페이지 로드 문제 발생</title>
-      <link>https://hangack.github.io/2022/02/24/Codding/Python/crwaling_G2G/g2g-crwaling04/</link>
-      <guid>https://hangack.github.io/2022/02/24/Codding/Python/crwaling_G2G/g2g-crwaling04/</guid>
+      <title>g2g-crawling04: 동적페이지 로드 문제 발생</title>
+      <link>https://hangack.github.io/2022/02/24/Codding/Python/crawling_G2G/g2g-crawling04/</link>
+      <guid>https://hangack.github.io/2022/02/24/Codding/Python/crawling_G2G/g2g-crawling04/</guid>
       <pubDate>Thu, 24 Feb 2022 08:57:00 GMT</pubDate>
       
         
@@ -98,7 +98,7 @@
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
       
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crwaling-G2G/">crwaling_G2G</category>
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crawling-G2G/">crawling_G2G</category>
       
       
       <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
@@ -106,7 +106,7 @@
       <category domain="https://hangack.github.io/tags/%ED%81%AC%EB%A1%A4%EB%A7%81/">크롤링</category>
       
       
-      <comments>https://hangack.github.io/2022/02/24/Codding/Python/crwaling_G2G/g2g-crwaling04/#disqus_thread</comments>
+      <comments>https://hangack.github.io/2022/02/24/Codding/Python/crawling_G2G/g2g-crawling04/#disqus_thread</comments>
       
     </item>
     
@@ -242,9 +242,9 @@
     </item>
     
     <item>
-      <title>g2g-crwaling03: G2G poe 현거래 매물 수집시작</title>
-      <link>https://hangack.github.io/2022/02/07/Codding/Python/crwaling_G2G/g2g-crwaling03/</link>
-      <guid>https://hangack.github.io/2022/02/07/Codding/Python/crwaling_G2G/g2g-crwaling03/</guid>
+      <title>g2g-crawling03: G2G poe 현거래 매물 수집시작</title>
+      <link>https://hangack.github.io/2022/02/07/Codding/Python/crawling_G2G/g2g-crawling03/</link>
+      <guid>https://hangack.github.io/2022/02/07/Codding/Python/crawling_G2G/g2g-crawling03/</guid>
       <pubDate>Mon, 07 Feb 2022 03:13:40 GMT</pubDate>
       
         
@@ -262,7 +262,7 @@
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
       
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crwaling-G2G/">crwaling_G2G</category>
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crawling-G2G/">crawling_G2G</category>
       
       
       <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
@@ -270,7 +270,7 @@
       <category domain="https://hangack.github.io/tags/%ED%81%AC%EB%A1%A4%EB%A7%81/">크롤링</category>
       
       
-      <comments>https://hangack.github.io/2022/02/07/Codding/Python/crwaling_G2G/g2g-crwaling03/#disqus_thread</comments>
+      <comments>https://hangack.github.io/2022/02/07/Codding/Python/crawling_G2G/g2g-crawling03/#disqus_thread</comments>
       
     </item>
     
@@ -371,9 +371,9 @@
     </item>
     
     <item>
-      <title>g2g-crwaling01: 크롤링 g2g 종목 선정</title>
-      <link>https://hangack.github.io/2022/01/23/Codding/Python/crwaling_G2G/g2g-crwaling01/</link>
-      <guid>https://hangack.github.io/2022/01/23/Codding/Python/crwaling_G2G/g2g-crwaling01/</guid>
+      <title>g2g-crawling01: 크롤링 g2g 종목 선정</title>
+      <link>https://hangack.github.io/2022/01/23/Codding/Python/crawling_G2G/g2g-crawling01/</link>
+      <guid>https://hangack.github.io/2022/01/23/Codding/Python/crawling_G2G/g2g-crawling01/</guid>
       <pubDate>Sat, 22 Jan 2022 19:37:44 GMT</pubDate>
       
         
@@ -392,13 +392,13 @@
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
       
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crwaling-G2G/">crwaling_G2G</category>
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crawling-G2G/">crawling_G2G</category>
       
       
       <category domain="https://hangack.github.io/tags/%ED%81%AC%EB%A1%A4%EB%A7%81/">크롤링</category>
       
       
-      <comments>https://hangack.github.io/2022/01/23/Codding/Python/crwaling_G2G/g2g-crwaling01/#disqus_thread</comments>
+      <comments>https://hangack.github.io/2022/01/23/Codding/Python/crawling_G2G/g2g-crawling01/#disqus_thread</comments>
       
     </item>
     
@@ -438,9 +438,9 @@
     </item>
     
     <item>
-      <title>g2g-crwaling00: javascript 동적페이지 크롤링</title>
-      <link>https://hangack.github.io/2022/01/17/Codding/Python/crwaling_G2G/g2g-crwaling00/</link>
-      <guid>https://hangack.github.io/2022/01/17/Codding/Python/crwaling_G2G/g2g-crwaling00/</guid>
+      <title>g2g-crawling00: javascript 동적페이지 크롤링</title>
+      <link>https://hangack.github.io/2022/01/17/Codding/Python/crawling_G2G/g2g-crawling00/</link>
+      <guid>https://hangack.github.io/2022/01/17/Codding/Python/crawling_G2G/g2g-crawling00/</guid>
       <pubDate>Sun, 16 Jan 2022 23:04:22 GMT</pubDate>
       
         
@@ -457,7 +457,7 @@
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
       
-      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crwaling-G2G/">crwaling_G2G</category>
+      <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/%ED%8C%8C%EC%9D%B4%EC%8D%AC/crawling-G2G/">crawling_G2G</category>
       
       
       <category domain="https://hangack.github.io/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC/">파이썬</category>
@@ -467,7 +467,7 @@
       <category domain="https://hangack.github.io/tags/%ED%81%AC%EB%A1%A4%EB%A7%81/">크롤링</category>
       
       
-      <comments>https://hangack.github.io/2022/01/17/Codding/Python/crwaling_G2G/g2g-crwaling00/#disqus_thread</comments>
+      <comments>https://hangack.github.io/2022/01/17/Codding/Python/crawling_G2G/g2g-crawling00/#disqus_thread</comments>
       
     </item>
     
