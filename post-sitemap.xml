@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://hangack.github.io/2022/02/24/Codding/Python/crawling_G2G/g2g-crawling04/</loc>
+        <lastmod>2022-03-04T03:00:43.850Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://hangack.github.io/2022/01/23/Codding/Python/crawling_G2G/g2g-crawling01/</loc>
         <lastmod>2022-03-04T01:19:49.958Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -43,14 +51,6 @@
     <url>
         <loc>https://hangack.github.io/2022/01/17/Codding/Python/crawling_G2G/g2g-crawling00/</loc>
         <lastmod>2022-03-04T01:19:49.852Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hangack.github.io/2022/02/24/Codding/Python/crawling_G2G/g2g-crawling04/</loc>
-        <lastmod>2022-03-04T01:19:49.823Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
