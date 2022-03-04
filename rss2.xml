@@ -9,24 +9,23 @@
     <atom:link href="https://hangack.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 04 Mar 2022 00:56:39 GMT</pubDate>
+    <pubDate>Fri, 04 Mar 2022 01:07:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>g2g-crwaling06: </title>
+      <title>g2g-crwaling06: div.noresult-main-title</title>
       <link>https://hangack.github.io/2022/03/04/Codding/Python/crwaling_G2G/g2g-crwaling06/</link>
       <guid>https://hangack.github.io/2022/03/04/Codding/Python/crwaling_G2G/g2g-crwaling06/</guid>
       <pubDate>Fri, 04 Mar 2022 00:54:30 GMT</pubDate>
       
         
         
-      <description>&lt;h1 id=&quot;외부링크&quot;&gt;&lt;a href=&quot;#외부링크&quot; class=&quot;headerlink&quot; title=&quot;외부링크&quot;&gt;&lt;/a&gt;외부링크&lt;/h1&gt;&lt;p&gt; -&lt;/p&gt;
-</description>
+      <description>&lt;h2 id=&quot;div-noresult-main-title-업데이트-20220304&quot;&gt;&lt;a href=&quot;#div-noresult-main-title-업데이트-20220304&quot; class=&quot;headerlink&quot; title=&quot;div.noresult-main-</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="외부링크"><a href="#외부링크" class="headerlink" title="외부링크"></a>외부링크</h1><p> -</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="div-noresult-main-title-업데이트-20220304"><a href="#div-noresult-main-title-업데이트-20220304" class="headerlink" title="div.noresult-main-title 업데이트(20220304)"></a>div.noresult-main-title 업데이트(20220304)</h2><p>크롤링하는 페이지에 새로운 문제가 발생했다.</p><p><code>div.noresult-main-title</code> 태그로 인해 server랑 currency 값을 불러올 수 없었다.</p><p><img src="/images/2202/g2g-crwaling06/noresult.png" alt="noresult"></p><p>URL에서 가져올 수 있겠지만 우선 함수를 빠져나가는 방식으로 업데이트 했다.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_data</span>():</span></span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (soup.find(<span class="string">&quot;div&quot;</span>, class_=<span class="string">&quot;noresult-main-title&quot;</span>).string == <span class="string">&quot;The offer you try to view is no longer available.&quot;</span>):</span><br><span class="line">        driver.close()</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure><p>if return을 추가하니 해당 페이지가 정상 title로 복구됐다… 작동 확인도 못해봤다.</p>]]></content:encoded>
       
       
       <category domain="https://hangack.github.io/categories/%EC%97%B0%EC%8A%B5/">연습</category>
